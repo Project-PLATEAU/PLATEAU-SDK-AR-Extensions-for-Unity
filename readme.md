@@ -36,7 +36,7 @@ AR Toolkit リポジトリの “/~Templates” ディレクトリの中にあ�
 
 ## サンプルを用いたARアプリケーションの体験
 
-<img width="400" alt="ar_manual_1_AR-Streaming" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e73e50b0-c5ee-4684-943a-e23647eea368">
+<img width="600" alt="ar_manual_1_AR-Streaming" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e73e50b0-c5ee-4684-943a-e23647eea368">
 
 AR Toolkit では各機能を使用したサンプルアセットおよび構築済みのARシーンを提供しています。このサンプルに含まれるシーンを用いることで、PLATEAU 3D都市モデルを使ったARアプリケーションをすぐに体験することができます。また、構築済みのアセットを見ることで、各機能の具体的な使い方を理解することもできます。
 
@@ -46,12 +46,13 @@ AR Toolkit では各機能を使用したサンプルアセットおよび構築
 
 ![ar_manual_1_2_packagemanager]()
 
-<img width="400" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/026868d8-b7ce-4946-bed7-42f9aed3638d">
+<img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/026868d8-b7ce-4946-bed7-42f9aed3638d">
 
 
 インポートされたサンプルは “Assets/Samples” ディレクトリに配置されます。以下の手順では Assets/Samples/PLATEAU AR Toolkit for Unity/0.1.0/AR Samples のディレクトリを「サンプルフォルダ」とします。
 
-![ar_manual_2_arsample_hierarchy](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/f3559a7a-040f-40e9-b9f0-35690080cc3c)
+<img width="600" alt="ar_manual_1_2_packagemanager" src="[https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/026868d8-b7ce-4946-bed7-42f9aed3638d](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/f3559a7a-040f-40e9-b9f0-35690080cc3c)">
+
 
 ### サンプルシーンを設定する
 
@@ -65,8 +66,8 @@ AR Toolkit では各機能を使用したサンプルアセットおよび構築
     - PLATEAUストリーミングでは対象の地域を選択する必要がありますが、サンプルでは地域を選択するUIを用意しています。
 - Boot
     - シーン選択のサンプルとしてBootシーンを用意しています。このシーンを起動シーンに選択し、他のシーンを合わせて登録するとシーン選択画面を表示し、任意のシーンを起動することができます。
-        
-        ![ar_manual_4_selectui](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/6f5343fd-ff9e-43f5-b881-c7c667d913c1)
+      
+        <img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/12030dd8-3b41-4eb6-ae63-9c359486494d">
 
 
 ### (任意) PLATEAU SDKでインポートした3D都市モデルを設定する
