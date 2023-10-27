@@ -270,4 +270,7 @@ AR Toolkit ウィンドウに用意している機能を使うことで、シー
 遮蔽されるオブジェクトのレイヤーを作成したAR Occludeeレイヤーに変更します。
 
 以上で、ARオクルージョンをオブジェクトに設定することができます。
+![2023-10-19-20-16-22](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/d1bff1d5-520e-44a4-8b52-c37d9d356dfe)
+
+
 
