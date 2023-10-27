@@ -93,7 +93,7 @@ Geospatial API を利用するためには、 Google Cloud プロジェクトを
 
 Unityエディターメニューの File > Build Settings を開き、ビルドするサンプルシーンをシーン一覧に登録します。
 
-![Untitled](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Untitled%202.png)
+<img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/dbb5534d-1bbc-4516-8f5f-89b2c7c328a0">
 
 ### アプリケーションをビルドして端末にインストールする
 
@@ -105,7 +105,8 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 ### ARサンプルシーンの操作方法
 
-![ar_manual_6_runtime_green](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/53af4141-0899-421e-a6e2-d5e31ba04a58)
+<img width="600" alt="ar_manual_6_runtime_green" src="[https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/dbb5534d-1bbc-4516-8f5f-89b2c7c328a0](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/cf1bb77e-df36-4a82-b7f0-20b604c86998)">
+
 
 **設定メニュー**
 
@@ -118,11 +119,9 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 **建物マテリアルの色設定**
 
 表示する3D都市モデルの色をRGBAスライダーを動かすことで変更することが可能です。
+<img width="600" alt="ar_manual_7_manualui" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e41e5627-6697-4610-877c-d1117a804f83">
 
-![ar_manual_7_manualui](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/9ca98f4f-2ce2-40ee-b3a4-08d541f4e02b)
-
-![ar_manual_8_runtime_red](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3c1d66bc-1014-4072-a45d-0265b497bc4a)
-
+<img width="600" alt="ar_manual_8_runtime_red" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3c1d66bc-1014-4072-a45d-0265b497bc4a">
 
 ## AR Toolkit ウィンドウ
 
