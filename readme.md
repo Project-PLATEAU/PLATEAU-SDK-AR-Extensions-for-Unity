@@ -117,7 +117,8 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 ![ar_manual_7_manualui](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/9ca98f4f-2ce2-40ee-b3a4-08d541f4e02b)
 
-![Screenshot_20231006-171848.png](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Screenshot_20231006-171848.png)
+![ar_manual_8_runtime_red](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3c1d66bc-1014-4072-a45d-0265b497bc4a)
+
 
 ## AR Toolkit ウィンドウ
 
