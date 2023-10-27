@@ -119,15 +119,15 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 **建物マテリアルの色設定**
 
 表示する3D都市モデルの色をRGBAスライダーを動かすことで変更することが可能です。
-<img width="600" alt="ar_manual_7_manualui" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e41e5627-6697-4610-877c-d1117a804f83">
+<img width="400" alt="ar_manual_7_manualui" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e41e5627-6697-4610-877c-d1117a804f83">
 
-<img width="600" alt="ar_manual_8_runtime_red" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3c1d66bc-1014-4072-a45d-0265b497bc4a">
+<img width="400" alt="ar_manual_8_runtime_red" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3c1d66bc-1014-4072-a45d-0265b497bc4a">
 
 ## AR Toolkit ウィンドウ
 
 上部のメニューより PLATEAU > PLATEAU Toolkit > AR Toolkit を選択し、AR Toolkit ウィンドウを開いて、それぞれの機能を利用することができます。
 
-![Untitled](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Untitled%203.png)
+<img width="600" alt="ar_manual_9_occulusionmenu" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/6b57dec3-0394-4335-84e0-7f55ef4fd426">
 
 ### 3D都市モデルのマテリアル変更
 
@@ -204,32 +204,33 @@ m_ARPositioning.SetOffset(offset);
 遮蔽するオブジェクトが使用するマテリアルを用意します。このマテリアルが遮蔽する側の透明のマテリアルになります。このマテリアルは後述するAR Occlusion Renderer Featureによって描画時に差し替えられます。
 ※このマテリアルを直接遮蔽する側のオブジェクトに設定しないのでご注意ください。
 
-<img width="400" alt="ar_manual_15arroccluder" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/633b6968-929b-445b-bdb4-8af972f1c5f5">
+<img width="400" alt="ar_manual_10arroccluder" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/4d6ef4c6-27eb-4f64-9cc4-6b44da74a594">
 
 
 ### レイヤーの作成
 
 ARオクルージョンを設定するためには、遮蔽する側と遮蔽される側の2つのレイヤーを用意する必要があります。ここでは遮蔽する側をAR Occluder、遮蔽される側をAR Occludeeとして説明しますが、必ずしも名前が一致している必要はありません。レイヤーの順序は他の要件を考慮の上設定してください。
 
-![Untitled (3).png](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Untitled_(3).png)
+<img width="400" alt="ar_manual_11_layer" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/438948d5-2f17-4f8b-aa77-a6eea1f04b95">
 
-![Untitled (4).png](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Untitled_(4).png)
+<img width="400" alt="ar_manual_12_userlayer" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/01da71cd-787a-4e7a-bcfd-ee4043a12a95">
+
 
 ### URP描画設定を開く
 
 Universal Renderer DataはURPプロジェクトの描画の設定をするファイルです。URP描画設定は状況に合わせた複数のURP設定が用意されていることもあり、UnityでURPプロジェクトを作成すると、3つのUniversal Renderer Dataとそれらに対応したUniversal Renderer Pipeline Assetがデフォルトで作成されます（HighFidelity、Balanced、Performant）。
 
-![Untitled](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Untitled%204.png)
+<img width="400" alt="ar_manual_13_selectrenderfeature" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/38df325f-b912-48da-810c-8c1b9432aeff">
+
 
 それぞれ、想定されるプラットフォームのスペックなどに合わせた描画設定がされています。例えば、モバイル向けにビルドする場合はBalancedやPerformantを使用し、PC向けにはHighFidelityやBalanced を使用します（これらはProject SettingsのQualityタブからプラットフォームごとに設定することができます）。
+<img width="483" alt="ar_manual_14" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/4cb513a6-bb1f-4ce4-8bb4-3aded56e54b5">
 
-![Untitled](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Untitled%205.png)
 
 ### URP描画設定にレイヤーを設定
 
 ARオクルージョンによって遮蔽されるオブジェクト（AR Occludeeレイヤー）は後述するARオクルージョン用のRenderer Featureによって描画されます。そのため、デフォルトで描画されるレイヤーからAR Occludeeレイヤーを削除します。描画はOpaque Layer MaskとTransparent Layer Maskの2つがあるため、それぞれからAR Occludeeレイヤーのチェックを解除してください。
 
-![Untitled](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Untitled%206.png)
 
 ### Plateau AR Occlusion Renderer Featureの追加
 
