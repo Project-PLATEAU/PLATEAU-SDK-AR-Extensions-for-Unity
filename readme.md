@@ -201,7 +201,8 @@ m_ARPositioning.SetOffset(offset);
 遮蔽するオブジェクトが使用するマテリアルを用意します。このマテリアルが遮蔽する側の透明のマテリアルになります。このマテリアルは後述するAR Occlusion Renderer Featureによって描画時に差し替えられます。
 ※このマテリアルを直接遮蔽する側のオブジェクトに設定しないのでご注意ください。
 
-![Untitled (2).png](Release2%20AR%20Toolkit%20README%20draft%20db4aa4f5a6644676a9bcb415b340407e/Untitled_(2).png)
+<img width="400" alt="ar_manual_15arroccluder" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/633b6968-929b-445b-bdb4-8af972f1c5f5">
+
 
 ### レイヤーの作成
 
