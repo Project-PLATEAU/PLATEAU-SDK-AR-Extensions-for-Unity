@@ -67,7 +67,7 @@ AR Toolkit では各機能を使用したサンプルアセットおよび構築
 - Boot
     - シーン選択のサンプルとしてBootシーンを用意しています。このシーンを起動シーンに選択し、他のシーンを合わせて登録するとシーン選択画面を表示し、任意のシーンを起動することができます。
       
-        <img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/12030dd8-3b41-4eb6-ae63-9c359486494d">
+<img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/12030dd8-3b41-4eb6-ae63-9c359486494d">
 
 
 ### (任意) PLATEAU SDKでインポートした3D都市モデルを設定する
