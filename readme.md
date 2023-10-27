@@ -1,7 +1,3 @@
-# Release2 AR Toolkit README draft
-
-- 目次
-
 # AR Toolkit・AR テンプレート利用マニュアル
 
 PLATEAUの3D都市モデルを使ったARアプリケーション開発を行うための支援機能を提供します。
@@ -105,8 +101,8 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 ### ARサンプルシーンの操作方法
 
-<img width="600" alt="ar_manual_6_runtime_green" src="[https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/dbb5534d-1bbc-4516-8f5f-89b2c7c328a0](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/cf1bb77e-df36-4a82-b7f0-20b604c86998)">
 
+<img width="400" alt="ar_manual_6_runtime_green" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/85249ec7-1d47-4d99-bfd5-8753108effde">
 
 **設定メニュー**
 
@@ -120,7 +116,6 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 表示する3D都市モデルの色をRGBAスライダーを動かすことで変更することが可能です。
 <img width="400" alt="ar_manual_7_manualui" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e41e5627-6697-4610-877c-d1117a804f83">
-
 <img width="400" alt="ar_manual_8_runtime_red" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3c1d66bc-1014-4072-a45d-0265b497bc4a">
 
 ## AR Toolkit ウィンドウ
