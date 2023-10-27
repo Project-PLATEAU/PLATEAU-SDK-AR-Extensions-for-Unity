@@ -225,21 +225,21 @@ Universal Renderer DataはURPプロジェクトの描画の設定をするファ
 
 それぞれ、想定されるプラットフォームのスペックなどに合わせた描画設定がされています。例えば、モバイル向けにビルドする場合はBalancedやPerformantを使用し、PC向けにはHighFidelityやBalanced を使用します（これらはProject SettingsのQualityタブからプラットフォームごとに設定することができます）。
 
-<img width="483" alt="ar_manual_14" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/4cb513a6-bb1f-4ce4-8bb4-3aded56e54b5">
+<img width="400" alt="ar_manual_14" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/4cb513a6-bb1f-4ce4-8bb4-3aded56e54b5">
 
 
 ### URP描画設定にレイヤーを設定
 
 ARオクルージョンによって遮蔽されるオブジェクト（AR Occludeeレイヤー）は後述するARオクルージョン用のRenderer Featureによって描画されます。そのため、デフォルトで描画されるレイヤーからAR Occludeeレイヤーを削除します。描画はOpaque Layer MaskとTransparent Layer Maskの2つがあるため、それぞれからAR Occludeeレイヤーのチェックを解除してください。
 
-<img width="478" alt="ar_manual_15_filtering" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/016e3236-ff43-4e37-95b8-07462c469d6c">
+<img width="400" alt="ar_manual_15_filtering" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/016e3236-ff43-4e37-95b8-07462c469d6c">
 
 
 ### Plateau AR Occlusion Renderer Featureの追加
 
 ARオクルージョンを動作させるためにはRenderer FeatureにAR Toolkitが用意する `PlateauAROcclusionRendererFeature` を追加する必要があります。
 
-<img width="487" alt="ar_manual_16_occlusion_renderfeature" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/6b2ee43d-786e-4442-ae67-dd784b3b31d2">
+<img width="400" alt="ar_manual_16_occlusion_renderfeature" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/6b2ee43d-786e-4442-ae67-dd784b3b31d2">
 
 
 “Add Renderer Feature” から上記のRenderer Featureを追加し、それぞれのフィールドを設定してください。
@@ -261,7 +261,7 @@ ARオクルージョンを動作させるためにはRenderer FeatureにAR Toolk
 
 AR ToolkitパッケージのMaterialsフォルダに遮蔽するオブジェクトに設定するための “ZWrite” というマテリアルを用意しています。遮蔽する側のオブジェクトにはこのマテリアルを設定してください。
 
-<img width="476" alt="ar_manual_17_zwrite" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e048a005-5469-408e-9112-d973d1985238">
+<img width="400" alt="ar_manual_17_zwrite" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e048a005-5469-408e-9112-d973d1985238">
 
 
 AR Toolkit ウィンドウに用意している機能を使うことで、シーン内の都市モデルのマテリアルを一括で変更することができます。PLATEAUストリーミングを用いる場合は `Cesium3DTileset` コンポーネントの Opaque Material フィールドを設定してください。
