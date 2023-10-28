@@ -12,7 +12,8 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
             - 参考: [PLATEAU Tutorials TOPIC14｜VR・ARでの活用](https://www.mlit.go.jp/plateau/learning/tpc14-2/#p14_2_7)
         - AR extensions ではオクルージョンマスクを設定するためのマテリアルやスクリプトを用意しています。
      
-#　目次
+# 目次
+
 - [事前準備](#事前準備)
   * [PLATEAU SDK Toolkits for Unity のインストール](#plateau-sdk-toolkits-for-unity-のインストール)
   * [AR用テンプレートプロジェクトのセットアップ](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/blob/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
@@ -55,9 +56,6 @@ AR extensions は PLATEAU SDK Toolkits for Unity の機能を利用している�
 
 [こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)を参照して PLATEAU SDK Toolkits for Unity をインストールしてください。
 
-# 利用手順
-
-
 ## AR用テンプレートプロジェクトのセットアップ
 
 本リポジトリでは構築済みのテンプレートプロジェクトを提供しています。  
@@ -67,14 +65,17 @@ AR extensions リポジトリの “/~Templates” ディレクトリの中に�
 
 テンプレートプロジェクトのUnityバージョンは2021.3.22f1です。手元にない場合はUnity Hub よりインストールしてください。
 
-## 3. サンプルを用いたARアプリケーションの体験
+# 利用手順
+
+
+## 1. サンプルを用いたARアプリケーションの体験
 
 <img width="600" alt="ar_manual_1_AR-Streaming" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e73e50b0-c5ee-4684-943a-e23647eea368">
 
 AR extensions では各機能を使用したサンプルアセットおよび構築済みのARシーンを提供しています。このサンプルに含まれるシーンを用いることで、PLATEAUの3D都市モデルを使ったARアプリケーションをすぐに体験することができます。  
 また、構築済みのアセットを見ることで、各機能の具体的な使い方を理解することもできます。
 
-### 3-1. AR Toolkit サンプルのインポート
+### 1-1. AR Toolkit サンプルのインポート
 
 メニューからPackage Managerを開き、AR extensions のサンプルをインポートしてください。
 
@@ -88,7 +89,7 @@ AR extensions では各機能を使用したサンプルアセットおよび構
 <img width="600" alt="ar_manual_1_2_packagemanager" src="[https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/026868d8-b7ce-4946-bed7-42f9aed3638d](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/f3559a7a-040f-40e9-b9f0-35690080cc3c)">
 
 
-### 3-2. サンプルシーンを設定する
+### 1-2. サンプルシーンを設定する
 
 サンプルフォルダの Scenes ディレクトリには以下のシーンが含まれています。
 
@@ -105,7 +106,7 @@ AR extensions では各機能を使用したサンプルアセットおよび構
 <img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/12030dd8-3b41-4eb6-ae63-9c359486494d">
 
 
-### 3-3. PLATEAU SDKでインポートした3D都市モデルを設定する
+### 1-3. PLATEAU SDKでインポートした3D都市モデルを設定する
 
 以下のドキュメントを参考にPLATEAU SDKでARアプリケーションを利用する付近の3D都市モデルをインポートします。
 
@@ -115,7 +116,7 @@ AR extensions では各機能を使用したサンプルアセットおよび構
 
 インポートが完了したら、「3D都市モデルのAR空間内位置合わせ機能」の項目を参考に、位置合わせコンポーネント ( `PlateauARPositioning` )を設定してください。
 
-### 3-4. Geospatial API (ARCore Extensions) の設定
+### 1-4. Geospatial API (ARCore Extensions) の設定
 
 Geospatial API を利用するためには、 Google Cloud プロジェクトを用意し、ARCore API の認証を設定する必要があります。ARCore API を有効化し、API認証を設定することで端末から Geospatial API を利用することができるようになります。設定方法については別のドキュメントにて解説されているため、そちらを参考に設定してください。
 
@@ -124,13 +125,13 @@ Geospatial API を利用するためには、 Google Cloud プロジェクトを
 - APIキーの作成
     - [https://www.mlit.go.jp/plateau/learning/tpc14-3/#p14_3_2](https://www.mlit.go.jp/plateau/learning/tpc14-3/#p14_3_2)
 
-### 3-5. ビルド設定にシーンを追加する
+### 1-5. ビルド設定にシーンを追加する
 
 Unityエディターメニューの File > Build Settings を開き、ビルドするサンプルシーンをシーン一覧に登録します。
 
 <img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/dbb5534d-1bbc-4516-8f5f-89b2c7c328a0">
 
-### 3-6. アプリケーションをビルドして端末にインストールする
+### 1-6. アプリケーションをビルドして端末にインストールする
 
 Build Settingsに表示されているプラットフォームからAndroidもしくはiOSを選択し、「Switch Platform」を押下してプラットフォームを切り替えます（この操作には数分かかります）。
 
@@ -138,7 +139,7 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 ビルドが完了したら、各プラットフォームに合わせて端末へアプリケーションをインストールしてください。
 
-### 3-7. ARサンプルシーンの操作方法
+### 1-7. ARサンプルシーンの操作方法
 
 
 <img width="400" alt="ar_manual_6_runtime_green" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/85249ec7-1d47-4d99-bfd5-8753108effde">
@@ -157,13 +158,13 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 <img width="400" alt="ar_manual_7_manualui" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e41e5627-6697-4610-877c-d1117a804f83">
 <img width="400" alt="ar_manual_8_runtime_red" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3c1d66bc-1014-4072-a45d-0265b497bc4a">
 
-## 4. AR extensions ウィンドウの利用方法
+## 2. AR extensions ウィンドウの利用方法
 
 メニューより PLATEAU > PLATEAU Toolkit > AR Toolkit を選択し、AR Toolkit ウィンドウを開いて、それぞれの機能を利用することができます。
 
 <img width="600" alt="ar_manual_9_occulusionmenu" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/6b57dec3-0394-4335-84e0-7f55ef4fd426">
 
-### 4-1. 3D都市モデルのマテリアル変更
+### 2-1. 3D都市モデルのマテリアル変更
 
 > **Note**
 > この機能は現時点ではインポートされた3D都市モデルにのみ対応しています（今後実装予定）。  
@@ -175,13 +176,13 @@ PLATEAU SDKを用いてシーンにインポートされた3D都市モデルオ�
 
 「ARオクルージョン遮蔽用マテリアルの参照を取得」を押下すると、遮蔽用マテリアルの参照がフィールドに設定されます。ARオクルージョン機能の利用方法については後述する「ARオクルージョン機能の利用方法」を参照してください。
 
-## 5. 3D都市モデルのAR空間内位置合わせ機能
+## 3. 3D都市モデルのAR空間内位置合わせ機能
 
 AR extensions が提供する `PlateauARPositionig` コンポーネントを3D都市モデルにアタッチして設定することで、その3D都市モデルをAR空間内の実際の位置に自動的に配置することができます。
 
 サンプルプロジェクトに設定済みのコンポーネントが含まれているので、以下の手順の参考にしてください。
 
-### 5-1. `PlateauARPositioning` を設定する
+### 3-1. `PlateauARPositioning` を設定する
 
 新しくゲームオブジェクトを作成し、 `PlateauARPositioning` コンポーネントをアタッチします。以下ではこのオブジェクトを「位置合わせオブジェクト」と呼ぶことにします。
 
@@ -192,21 +193,21 @@ AR extensions が提供する `PlateauARPositionig` コンポーネントを3D�
 > **備考**
 > これらのオブジェクトは位置合わせオブジェクトが必要とするコンポーネントですが、具体的な実装は AR extensions に含まれておらず、これらは抽象的なインターフェースとして提供されています。これはそれぞれの機能が利用されるアプリケーションに大きく依存するためです。そのため、これらのインターフェースの具体的な実装はサンプルとしてそれぞれ `GeospatialController` クラスと `GsiGeoidHeightProvider` クラスとして提供されています。
 
-### 5-2. PLATEAU SDKでインポートした3D都市モデルを使用する場合
+### 3-2. PLATEAU SDKでインポートした3D都市モデルを使用する場合
 
 - 3D都市モデルオブジェクトを位置合わせオブジェクトの子オブジェクトとして配置します。
 - `PlateauARPositioning` の `Plateau City Model` に3D都市モデルオブジェクトをセットします。
 
-### 5-3. PLATEAUストリーミング(Cesium for Unity)を使用する場合
+### 3-3. PLATEAUストリーミング(Cesium for Unity)を使用する場合
 
 - `CesiumGeoreference` がアタッチされているオブジェクトを位置合わせオブジェクトの子オブジェクトとして配置します。
 - `PlateauARPositioning` の `Cesium Georeference` と `Cesium 3D Tileset` にそれぞれ対象のオブジェクトをセットします。
 
-### 5-4. 手動位置合わせ機能
+### 3-4. 手動位置合わせ機能
 
 `PlateauARPositionig` は `SetOffset(Vector3 offset)` というメソッドを公開しています。このメソッドにオフセット値を渡すことで、Geospatial API によって配置される位置を調整することができます。
 
-## 6. ARマーカーによる高さ合わせ機能
+## 4. ARマーカーによる高さ合わせ機能
 
 現実世界に配置したARマーカー画像を用いた地面の高さの位置合わせ機能です。
 
@@ -230,12 +231,12 @@ offset.y = -m_ARMarkerGroundController.HeightGap;
 m_ARPositioning.SetOffset(offset);
 ```
 
-## 7. ARオクルージョン機能の利用方法
+## 5. ARオクルージョン機能の利用方法
 
 > **備考**
 > ARテンプレートプロジェクトではARオクルージョンのための設定が構築されています。そのため、ARテンプレートをベースに開発をする場合はARオクルージョンのプロジェクト設定は不要です。
 
-### 7-1. 遮蔽オブジェクトマテリアルの作成
+### 5-1. 遮蔽オブジェクトマテリアルの作成
 
 遮蔽するオブジェクトが使用するマテリアルを用意します。このマテリアルが遮蔽する側の透明のマテリアルになります。このマテリアルは後述するAR Occlusion Renderer Featureによって描画時に差し替えられます。  
 ※このマテリアルを直接遮蔽する側のオブジェクトに設定しないのでご注意ください。
@@ -243,7 +244,7 @@ m_ARPositioning.SetOffset(offset);
 <img width="400" alt="ar_manual_10arroccluder" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/4d6ef4c6-27eb-4f64-9cc4-6b44da74a594">
 
 
-### 7-2. レイヤーの作成
+### 5-2. レイヤーの作成
 
 ARオクルージョンを設定するためには、遮蔽する側と遮蔽される側の2つのレイヤーを用意する必要があります。ここでは遮蔽する側をAR Occluder、遮蔽される側をAR Occludeeとして説明しますが、必ずしも名前が一致している必要はありません。レイヤーの順序は他の要件を考慮の上設定してください。
 
@@ -252,7 +253,7 @@ ARオクルージョンを設定するためには、遮蔽する側と遮蔽さ
 <img width="400" alt="ar_manual_12_userlayer" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/01da71cd-787a-4e7a-bcfd-ee4043a12a95">
 
 
-### 7-3. URP描画設定を開く
+### 5-3. URP描画設定を開く
 
 Universal Renderer DataはURPプロジェクトの描画の設定をするファイルです。URP描画設定は状況に合わせた複数のURP設定が用意されていることもあり、UnityでURPプロジェクトを作成すると、3つのUniversal Renderer Dataとそれらに対応したUniversal Renderer Pipeline Assetがデフォルトで作成されます（HighFidelity、Balanced、Performant）。
 
@@ -264,14 +265,14 @@ Universal Renderer DataはURPプロジェクトの描画の設定をするファ
 <img width="400" alt="ar_manual_14" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/4cb513a6-bb1f-4ce4-8bb4-3aded56e54b5">
 
 
-### 7-4. URP描画設定にレイヤーを設定
+### 5-4. URP描画設定にレイヤーを設定
 
 ARオクルージョンによって遮蔽されるオブジェクト（AR Occludeeレイヤー）は後述するARオクルージョン用のRenderer Featureによって描画されます。そのため、デフォルトで描画されるレイヤーからAR Occludeeレイヤーを削除します。描画はOpaque Layer MaskとTransparent Layer Maskの2つがあるため、それぞれからAR Occludeeレイヤーのチェックを解除してください。
 
 <img width="400" alt="ar_manual_15_filtering" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/016e3236-ff43-4e37-95b8-07462c469d6c">
 
 
-### 7-5. Plateau AR Occlusion Renderer Featureの追加
+### 5-5. Plateau AR Occlusion Renderer Featureの追加
 
 ARオクルージョンを動作させるためにはRenderer Featureに AR extensions が用意する `PlateauAROcclusionRendererFeature` を追加する必要があります。
 
@@ -287,13 +288,13 @@ ARオクルージョンを動作させるためにはRenderer Featureに AR exte
 
 ここまでで、設定ファイルの変更は完了です。
 
-### 7-5. 遮蔽するオブジェクトのレイヤーを変更
+### 5-6. 遮蔽するオブジェクトのレイヤーを変更
 
 遮蔽する側のオブジェクトのレイヤーを作成したAR Occluderレイヤーに変更します。
 
 親オブジェクトだけでなく、すべての子オブジェクトのレイヤーも一括で変更してください（親オブジェクトのレイヤーを変更すると、子オブジェクトのレイヤーを変更するかどうかのウィンドウが表示されます）。
 
-### 7-6. 遮蔽するオブジェクトのマテリアルをZWriteに変更
+### 5-7. 遮蔽するオブジェクトのマテリアルをZWriteに変更
 
 AR extensions パッケージのMaterialsフォルダに遮蔽するオブジェクトに設定するための “ZWrite” というマテリアルを用意しています。遮蔽する側のオブジェクトにはこのマテリアルを設定してください。
 
@@ -306,7 +307,7 @@ AR extensions ウィンドウに用意している機能を使うことで、シ
 <img width="400" alt="ar_manual_18_zwrite_mat" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/0974f095-16de-4575-86f6-722028bfdd43">
 
 
-### 7-7. 遮蔽されるオブジェクトのレイヤーを変更
+### 5-8. 遮蔽されるオブジェクトのレイヤーを変更
 
 遮蔽されるオブジェクトのレイヤーを作成したAR Occludeeレイヤーに変更します。
 
