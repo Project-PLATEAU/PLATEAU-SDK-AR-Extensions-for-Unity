@@ -6,7 +6,6 @@ https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/13
 
 
 
-
 PLATEAUの3D都市モデルを使ったARアプリケーション開発を行うための支援機能を提供します。
 
 - PLATEAU-SDK-AR-Extensions-for-Unityで提供される機能
@@ -41,7 +40,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
     + [1-5. ビルド設定にシーンを追加する](#1-5-ビルド設定にシーンを追加する)
     + [1-6. アプリケーションをビルドして端末にインストールする](#1-6-アプリケーションをビルドして端末にインストールする)
     + [1-7. ARサンプルシーンの操作方法](#1-7-arサンプルシーンの操作方法)
-  * [2. AR Extensions ウィンドウの利用方法](#2-ar-extensions-ウィンドウの利用方法)
+  * [2. ウィンドウの利用方法](#2-ウィンドウの利用方法)
     + [2-1. 3D都市モデルのマテリアル変更](#2-1-3d都市モデルのマテリアル変更)
 
   * [3. 3D都市モデルのAR空間内位置合わせ機能](#3-3d都市モデルのar空間内位置合わせ機能)
@@ -62,8 +61,24 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
     + [5-7. 遮蔽するオブジェクトのマテリアルをZWriteに変更](#5-7-遮蔽するオブジェクトのマテリアルをzwriteに変更)
     + [5-8. 遮蔽されるオブジェクトのレイヤーを変更](#5-8-遮蔽されるオブジェクトのレイヤーを変更)
   * [ライセンス](#ライセンス)
-  * [注意事項/利用規約](#注意事項/利用規約)
+  * [注意事項/利用規約](#注意事項利用規約)
       
+
+
+# 検証済環境
+### 推奨OS環境
+- Windows11
+- macOS Ventura 13.2
+
+### Unity Version
+- Unity 2021.3.31f1 (2023/10/10現在 2021 LTSバージョン)
+    - Unity 2021.3系であれば問題なく動作する見込みです。
+
+### Rendering Pipeline
+- URP
+
+## PLATEAU SDKバージョン
+- [version 2.0.3-alpha](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.0.3-alpha)
 
 # 事前準備
 
@@ -83,7 +98,6 @@ AR extensions リポジトリの “/~Templates” ディレクトリの中に�
 テンプレートプロジェクトのUnityバージョンは2021.3.22f1です。手元にない場合はUnity Hub よりインストールしてください。
 
 # 利用手順
-
 
 ## 1. サンプルを用いたARアプリケーションの体験
 
@@ -294,8 +308,9 @@ ARオクルージョンを動作させるためにはRenderer Featureに AR Exte
 
 “Add Renderer Feature” から上記のRenderer Featureを追加し、それぞれのフィールドを設定してください。
 
-| AR Occludee Mask | 作成した遮蔽されるオブジェクトのレイヤーマスク |
+| |  |
 | --- | --- |
+| AR Occludee Mask | 作成した遮蔽されるオブジェクトのレイヤーマスク |
 | AR Occluder Mask | 作成した遮蔽するオブジェクトのレイヤーマスク |
 | AR Occluder Material | 作成した遮蔽オブジェクト用の透明マテリアルの参照 |
 
