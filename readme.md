@@ -1,5 +1,12 @@
 # PLATEAU-SDK-AR-extensions-for-Unity 利用マニュアル
 
+
+
+https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/dba80124-85ec-4292-b26c-75d7d2cfd995
+
+
+
+
 PLATEAUの3D都市モデルを使ったARアプリケーション開発を行うための支援機能を提供します。
 
 - PLATEAU-SDK-AR-extensions-for-Unityで提供される機能
@@ -28,12 +35,12 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
     + [1-6. アプリケーションをビルドして端末にインストールする](#1-6-アプリケーションをビルドして端末にインストールする)
     + [1-7. ARサンプルシーンの操作方法](#1-7-arサンプルシーンの操作方法)
   * [2. AR extensions ウィンドウの利用方法](#2-ar-extensions-ウィンドウの利用方法)
-    + [2-1. 3D都市モデルのマテリアル変更](#2-1-3D都市モデルのマテリアル変更)
+    + [2-1. 3D都市モデルのマテリアル変更](#2-1-3d都市モデルのマテリアル変更)
 
-  * [3. 3D都市モデルのAR空間内位置合わせ機能](#3-3D都市モデルのar空間内位置合わせ機能)
+  * [3. 3D都市モデルのAR空間内位置合わせ機能](#3-3d都市モデルのar空間内位置合わせ機能)
     + [3-1. `PlateauARPositioning` を設定する](#3-1-plateauarpositioning-を設定する)
     + [3-2. PLATEAU SDKでインポートした3D都市モデルを使用する場合](#3-2-plateau-sdkでインポートした3d都市モデルを使用する場合)
-    + [3-3. PLATEAUストリーミング(Cesium for Unity)を使用する場合](#3-3-PLATEAUストリーミングcesium-for-unityを使用する場合)
+    + [3-3. PLATEAUストリーミング(Cesium for Unity)を使用する場合](#3-3-plateauストリーミングcesium-for-unityを使用する場合)
     + [3-4. 手動位置合わせ機能](#3-4-手動位置合わせ機能)
       
   * [4. ARマーカーによる高さ合わせ機能](#4-arマーカーによる高さ合わせ機能)
@@ -102,7 +109,7 @@ AR extensions では各機能を使用したサンプルアセットおよび構
 - Boot
     - シーン選択のサンプルとしてBootシーンを用意しています。このシーンを起動シーンに選択し、他のシーンを合わせて登録するとシーン選択画面を表示し、任意のシーンを起動することができます。
       
-<img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/12030dd8-3b41-4eb6-ae63-9c359486494d">
+<img width="400" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/12030dd8-3b41-4eb6-ae63-9c359486494d">
 
 
 ### 1-3. PLATEAU SDKでインポートした3D都市モデルを設定する
