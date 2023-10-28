@@ -218,7 +218,7 @@ AR extensions が提供する `PlateauARPositioning` コンポーネントを3D�
 
 ### 3-4. 手動位置合わせ機能
 
-`PlateauARPositionig` は `SetOffset(Vector3 offset)` というメソッドを公開しています。このメソッドにオフセット値を渡すことで、Geospatial API によって配置される位置を調整することができます。
+`PlateauARPositioning` は `SetOffset(Vector3 offset)` というメソッドを公開しています。このメソッドにオフセット値を渡すことで、Geospatial API によって配置される位置を調整することができます。
 
 ## 4. ARマーカーによる高さ合わせ機能
 
