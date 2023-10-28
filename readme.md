@@ -16,7 +16,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 
 - [事前準備](#事前準備)
   * [PLATEAU SDK Toolkits for Unity のインストール](#plateau-sdk-toolkits-for-unity-のインストール)
-  * [AR用テンプレートプロジェクトのセットアップ](#AR用テンプレートプロジェクトのセットアップ)
+  * [AR用テンプレートプロジェクトのセットアップ](#ar用テンプレートプロジェクトのセットアップ)
  
 - [利用手順](#利用手順)
   * [1. サンプルを用いたARアプリケーションの体験](#1-サンプルを用いたarアプリケーションの体験)
@@ -80,14 +80,12 @@ AR extensions では各機能を使用したサンプルアセットおよび構
 
 メニューからPackage Managerを開き、AR extensions のサンプルをインポートしてください。
 
-![ar_manual_1_2_packagemanager]()
 
 <img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/026868d8-b7ce-4946-bed7-42f9aed3638d">
 
-
 インポートされたサンプルは “Assets/Samples” ディレクトリに配置されます。以下の手順では Assets/Samples/PLATEAU AR Toolkit for Unity/0.1.0/AR Samples のディレクトリを「サンプルフォルダ」とします。
 
-<img width="600" alt="ar_manual_1_2_packagemanager" src="[https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/026868d8-b7ce-4946-bed7-42f9aed3638d](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/f3559a7a-040f-40e9-b9f0-35690080cc3c)">
+<img width="400" alt="ar_manual_2_arsample_hierarchy" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/b380a412-0a6b-44a4-ba04-c842d8b51e00">
 
 
 ### 1-2. サンプルシーンを設定する
