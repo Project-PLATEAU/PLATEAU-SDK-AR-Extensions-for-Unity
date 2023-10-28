@@ -1,4 +1,4 @@
-# PLATEAU-SDK-AR-extensions-for-Unity 利用マニュアル
+# PLATEAU-SDK-AR-Extensions-for-Unity 利用マニュアル
 
 
 
@@ -9,7 +9,7 @@ https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/13
 
 PLATEAUの3D都市モデルを使ったARアプリケーション開発を行うための支援機能を提供します。
 
-- PLATEAU-SDK-AR-extensions-for-Unityで提供される機能
+- PLATEAU-SDK-AR-Extensions-for-Unityで提供される機能
     - Geospatial API を用いたAR空間での3D都市モデルの位置合わせ
         - インポート (PLATEAU SDK) もしくはストリーミング (Cesium for Unity) により配置された3D都市モデルを、ビルドされたAR空間内で実際の建物の位置に配置します。
         - 3D都市モデルの位置がずれる場合にUIにより位置を調整することができます。
@@ -17,7 +17,14 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
     - オクルージョンのためのアセットや調整機能
         - AR空間内で3D都市モデルを用いて3Dオブジェクトを遮蔽する機能をオクルージョンと呼びます。
             - 参考: [PLATEAU Tutorials TOPIC14｜VR・ARでの活用](https://www.mlit.go.jp/plateau/learning/tpc14-2/#p14_2_7)
-        - AR extensions ではオクルージョンマスクを設定するためのマテリアルやスクリプトを用意しています。
+        - AR Extensions ではオクルージョンマスクを設定するためのマテリアルやスクリプトを用意しています。
+     
+
+### 更新履歴
+
+|  2023/10/28  |  AR Extensions初回リリース|
+| :--- | :--- |
+
      
 # 目次
 
@@ -27,14 +34,14 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
  
 - [利用手順](#利用手順)
   * [1. サンプルを用いたARアプリケーションの体験](#1-サンプルを用いたarアプリケーションの体験)
-    + [1-1. AR Toolkit サンプルのインポート](#1-1-ar-toolkit-サンプルのインポート)
+    + [1-1. AR Extensions サンプルのインポート](#1-1-ar-extensions-サンプルのインポート)
     + [1-2. サンプルシーンを設定する](#1-2-サンプルシーンを設定する)
     + [1-3. PLATEAU SDKでインポートした3D都市モデルを設定する](#1-3-plateau-sdkでインポートした3d都市モデルを設定する)
     + [1-4. Geospatial API (ARCore Extensions) の設定](#1-4-geospatial-api-arcore-extensions-の設定)
     + [1-5. ビルド設定にシーンを追加する](#1-5-ビルド設定にシーンを追加する)
     + [1-6. アプリケーションをビルドして端末にインストールする](#1-6-アプリケーションをビルドして端末にインストールする)
     + [1-7. ARサンプルシーンの操作方法](#1-7-arサンプルシーンの操作方法)
-  * [2. AR extensions ウィンドウの利用方法](#2-ar-extensions-ウィンドウの利用方法)
+  * [2. AR Extensions ウィンドウの利用方法](#2-ar-extensions-ウィンドウの利用方法)
     + [2-1. 3D都市モデルのマテリアル変更](#2-1-3d都市モデルのマテリアル変更)
 
   * [3. 3D都市モデルのAR空間内位置合わせ機能](#3-3d都市モデルのar空間内位置合わせ機能)
@@ -54,13 +61,15 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
     + [5-6. 遮蔽するオブジェクトのレイヤーを変更](#5-6-遮蔽するオブジェクトのレイヤーを変更)
     + [5-7. 遮蔽するオブジェクトのマテリアルをZWriteに変更](#5-7-遮蔽するオブジェクトのマテリアルをzwriteに変更)
     + [5-8. 遮蔽されるオブジェクトのレイヤーを変更](#5-8-遮蔽されるオブジェクトのレイヤーを変更)
+  * [ライセンス](#ライセンス)
+  * [注意事項/利用規約](#注意事項/利用規約)
       
 
 # 事前準備
 
 ## PLATEAU SDK Toolkits for Unity のインストール
 
-AR extensions は PLATEAU SDK Toolkits for Unity の機能を利用しているため、AR Toolkitを利用するためにはこちらをインストールする必要があります。
+AR Extensions は PLATEAU SDK Toolkits for Unity の機能を利用しているため、AR Toolkitを利用するためにはこちらをインストールする必要があります。
 
 [こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)を参照して PLATEAU SDK Toolkits for Unity をインストールしてください。
 
@@ -83,12 +92,12 @@ AR extensions リポジトリの “/~Templates” ディレクトリの中に�
 AR extensions では各機能を使用したサンプルアセットおよび構築済みのARシーンを提供しています。このサンプルに含まれるシーンを用いることで、PLATEAUの3D都市モデルを使ったARアプリケーションをすぐに体験することができます。  
 また、構築済みのアセットを見ることで、各機能の具体的な使い方を理解することもできます。
 
-### 1-1. AR Toolkit サンプルのインポート
+### 1-1. AR Extensions サンプルのインポート
 
-メニューからPackage Managerを開き、AR extensions のサンプルをインポートしてください。
+メニューからPackage Managerを開き、AR Extensions のサンプルをインポートしてください。
 
+<img width="600" alt="ar_manual_1_3_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3ae3057d-0bb5-4013-9626-1a75b86d5290">
 
-<img width="600" alt="ar_manual_1_2_packagemanager" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/026868d8-b7ce-4946-bed7-42f9aed3638d">
 
 インポートされたサンプルは “Assets/Samples” ディレクトリに配置されます。以下の手順では Assets/Samples/PLATEAU AR Toolkit for Unity/0.1.0/AR Samples のディレクトリを「サンプルフォルダ」とします。
 
@@ -101,7 +110,7 @@ AR extensions では各機能を使用したサンプルアセットおよび構
 
 - Sample01_PlateauSdkAR
     - PLATEAU SDKでインポートした3D都市モデルを用いたARシーンです。
-    - 銀座の周辺の3D都市モデルを用いたサンプルとなっているため、このシーンを利用する際は別途3D都市モデルをインポートして差し替える必要があります。
+    - 銀座の周辺の3D都市モデルを用いたサンプルとなっているため、このシーンを銀座以外の場所で利用する際には別途3D都市モデルをインポートして差し替える必要があります。
 - Sample02_PlateauCesiumAR
     - ストリーミングにより配置されたPLATEAUの3D都市モデル（3DTiles）を用いたARシーンです。
     - ストリーミングでは対象の地域を選択する必要がありますが、サンプルでは地域を選択するUIを用意しています。
@@ -150,13 +159,11 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 <img width="400" alt="ar_manual_6_runtime_green" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/85249ec7-1d47-4d99-bfd5-8753108effde">
 
-**設定メニュー**
-
 サンプルアプリの右上の設定メニューでは下記のような設定を行うことが可能です。
 
 **手動位置合わせ**
 
-3D都市モデルの座標位置を３に沿って移動させ、位置を調整することが可能です。
+3D都市モデルの座標位置をxyzの三軸に沿って移動させ、位置を調整することが可能です。
 
 **建物マテリアルの色設定**
 
@@ -164,7 +171,7 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 <img width="400" alt="ar_manual_7_manualui" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e41e5627-6697-4610-877c-d1117a804f83">
 <img width="400" alt="ar_manual_8_runtime_red" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/3c1d66bc-1014-4072-a45d-0265b497bc4a">
 
-## 2. AR extensions ウィンドウの利用方法
+## 2. ウィンドウの利用方法
 
 メニューより PLATEAU > PLATEAU Toolkit > AR Toolkit を選択し、AR Toolkit ウィンドウを開いて、それぞれの機能を利用することができます。
 
@@ -184,7 +191,7 @@ PLATEAU SDKを用いてシーンにインポートされた3D都市モデルオ�
 
 ## 3. 3D都市モデルのAR空間内位置合わせ機能
 
-AR extensions が提供する `PlateauARPositionig` コンポーネントを3D都市モデルにアタッチして設定することで、その3D都市モデルをAR空間内の実際の位置に自動的に配置することができます。
+AR extensions が提供する `PlateauARPositioning` コンポーネントを3D都市モデルにアタッチして設定することで、その3D都市モデルをAR空間内の実際の位置に自動的に配置することができます。
 
 サンプルプロジェクトに設定済みのコンポーネントが含まれているので、以下の手順の参考にしてください。
 
@@ -197,7 +204,7 @@ AR extensions が提供する `PlateauARPositionig` コンポーネントを3D�
 `Geoid Height Provider` は新たにゲームオブジェクトを作成し、サンプルの `GsiGeoidHeightProvider` をアタッチして設定します。
 
 > **備考**
-> これらのオブジェクトは位置合わせオブジェクトが必要とするコンポーネントですが、具体的な実装は AR extensions に含まれておらず、これらは抽象的なインターフェースとして提供されています。これはそれぞれの機能が利用されるアプリケーションに大きく依存するためです。そのため、これらのインターフェースの具体的な実装はサンプルとしてそれぞれ `GeospatialController` クラスと `GsiGeoidHeightProvider` クラスとして提供されています。
+> これらのオブジェクトは位置合わせオブジェクトが必要とするコンポーネントですが、具体的な実装は AR Extensions に含まれておらず、これらは抽象的なインターフェースとして提供されています。これはそれぞれの機能が利用されるアプリケーションに大きく依存するためです。そのため、これらのインターフェースの具体的な実装はサンプルとしてそれぞれ `GeospatialController` クラスと `GsiGeoidHeightProvider` クラスとして提供されています。
 
 ### 3-2. PLATEAU SDKでインポートした3D都市モデルを使用する場合
 
@@ -280,7 +287,7 @@ ARオクルージョンによって遮蔽されるオブジェクト（AR Occlud
 
 ### 5-5. Plateau AR Occlusion Renderer Featureの追加
 
-ARオクルージョンを動作させるためにはRenderer Featureに AR extensions が用意する `PlateauAROcclusionRendererFeature` を追加する必要があります。
+ARオクルージョンを動作させるためにはRenderer Featureに AR Extensions が用意する `PlateauAROcclusionRendererFeature` を追加する必要があります。
 
 <img width="400" alt="ar_manual_16_occlusion_renderfeature" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/6b2ee43d-786e-4442-ae67-dd784b3b31d2">
 
@@ -302,12 +309,12 @@ ARオクルージョンを動作させるためにはRenderer Featureに AR exte
 
 ### 5-7. 遮蔽するオブジェクトのマテリアルをZWriteに変更
 
-AR extensions パッケージのMaterialsフォルダに遮蔽するオブジェクトに設定するための “ZWrite” というマテリアルを用意しています。遮蔽する側のオブジェクトにはこのマテリアルを設定してください。
+AR Extensions パッケージのMaterialsフォルダに遮蔽するオブジェクトに設定するための “ZWrite” というマテリアルを用意しています。遮蔽する側のオブジェクトにはこのマテリアルを設定してください。
 
 <img width="400" alt="ar_manual_17_zwrite" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/e048a005-5469-408e-9112-d973d1985238">
 
 
-AR extensions ウィンドウに用意している機能を使うことで、シーン内の都市モデルのマテリアルを一括で変更することができます。ストリーミングを用いる場合は `Cesium3DTileset` コンポーネントの Opaque Material フィールドを設定してください。
+AR Extensions ウィンドウに用意している機能を使うことで、シーン内の都市モデルのマテリアルを一括で変更することができます。ストリーミングを用いる場合は `Cesium3DTileset` コンポーネントの Opaque Material フィールドを設定してください。
 
 
 <img width="400" alt="ar_manual_18_zwrite_mat" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/0974f095-16de-4575-86f6-722028bfdd43">
@@ -321,4 +328,17 @@ AR extensions ウィンドウに用意している機能を使うことで、シ
 ![2023-10-19-20-16-22](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/assets/137732437/d1bff1d5-520e-44a4-8b52-c37d9d356dfe)
 
 
+# ライセンス
+- 本リポジトリはMITライセンスで提供されています。
+- 本システムの開発はユニティ・テクノロジーズ・ジャパン株式会社が行っています。
+- ソースコードおよび関連ドキュメントの著作権は国土交通省に帰属します。
+
+# 注意事項/利用規約
+- 本ツールはベータバージョンです。バグ、動作不安定、予期せぬ挙動等が発生する可能性があり、動作保証はできかねますのでご了承ください。
+- 処理をしたあとにToolkitsをアンインストールした場合、建物の表示が壊れるなど挙動がおかしくなる場合がございます。
+- 本ツールをアップデートした際は、一度Unity エディタを再起動してご利用ください。
+- パフォーマンスの観点から、3D都市モデルをダウンロード・インポートする際は、3㎞2範囲内とすることを推奨しています。
+- インポートエリアの広さや地物の種類（建物、道路、災害リスクなど）が増えると処理負荷が高くなる可能性があります。
+- 本リポジトリの内容は予告なく変更・削除する可能性があります。
+- 本リポジトリの利用により生じた損失及び損害等について、国土交通省はいかなる責任も負わないものとします。
 
