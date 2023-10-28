@@ -16,11 +16,11 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 
 - [事前準備](#事前準備)
   * [PLATEAU SDK Toolkits for Unity のインストール](#plateau-sdk-toolkits-for-unity-のインストール)
-  * [AR用テンプレートプロジェクトのセットアップ](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/blob/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
+  * [AR用テンプレートプロジェクトのセットアップ](#AR用テンプレートプロジェクトのセットアップ)
  
-- [利用手順](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/edit/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
-  * [1. サンプルを用いたARアプリケーションの体験]()
-    + [1-1. AR Toolkit サンプルのインポート]()
+- [利用手順](#利用手順)
+  * [1. サンプルを用いたARアプリケーションの体験](#1-サンプルを用いたarアプリケーションの体験)
+    + [1-1. AR Toolkit サンプルのインポート](#1-1.-AR-Toolkit サンプルのインポート)
     + [1-2. サンプルシーンを設定する]()
     + [1-3. PLATEAU SDKでインポートした3D都市モデルを設定する]()
     + [1-4. Geospatial API (ARCore Extensions) の設定]()
