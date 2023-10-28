@@ -11,6 +11,41 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
         - AR空間内で3D都市モデルを用いて3Dオブジェクトを遮蔽する機能をオクルージョンと呼びます。
             - 参考: [PLATEAU Tutorials TOPIC14｜VR・ARでの活用](https://www.mlit.go.jp/plateau/learning/tpc14-2/#p14_2_7)
         - AR extensions ではオクルージョンマスクを設定するためのマテリアルやスクリプトを用意しています。
+     
+# 目次
+- [事前準備](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/edit/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
+  * [PLATEAU SDK Toolkits for Unity のインストール]()
+  * [AR用テンプレートプロジェクトのセットアップ]()
+ 
+- [利用手順](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/edit/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
+  * [1. サンプルを用いたARアプリケーションの体験]()
+    + [1-1. AR Toolkit サンプルのインポート]()
+    + [1-2. サンプルシーンを設定する]()
+    + [1-3. PLATEAU SDKでインポートした3D都市モデルを設定する]()
+    + [1-4. Geospatial API (ARCore Extensions) の設定]()
+    + [1-5. ビルド設定にシーンを追加する]()
+    + [1-6. アプリケーションをビルドして端末にインストールする]()
+    + [1-7. ARサンプルシーンの操作方法]()
+  * [2. AR extensions ウィンドウの利用方法]()
+    + [2-1. 3D都市モデルのマテリアル変更]()
+
+  * [3. 3D都市モデルのAR空間内位置合わせ機能]()
+    + [3-1. `PlateauARPositioning` を設定する]()
+    + [3-2. PLATEAU SDKでインポートした3D都市モデルを使用する場合]()
+    + [3-3. PLATEAUストリーミング(Cesium for Unity)を使用する場合]()
+    + [3-4. 手動位置合わせ機能]()
+      
+  * [4. ARマーカーによる高さ合わせ機能]()
+    
+  * [5. ARオクルージョン機能の利用方法]()
+    + [5-1. 遮蔽オブジェクトマテリアルの作成]()
+    + [5-2. レイヤーの作成]()
+    + [5-3. URP描画設定を開く]()
+    + [5-4. URP描画設定にレイヤーを設定]()
+    + [5-5. 遮蔽するオブジェクトのレイヤーを変更]()
+    + [5-6. 遮蔽するオブジェクトのマテリアルをZWriteに変更]()
+    + [5-7. 遮蔽されるオブジェクトのレイヤーを変更]()
+      
 
 # 事前準備
 
@@ -19,6 +54,9 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 AR extensions は PLATEAU SDK Toolkits for Unity の機能を利用しているため、AR Toolkitを利用するためにはこちらをインストールする必要があります。
 
 [こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)を参照して PLATEAU SDK Toolkits for Unity をインストールしてください。
+
+# 利用手順
+
 
 ## 2. AR用テンプレートプロジェクトのセットアップ
 
