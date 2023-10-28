@@ -14,7 +14,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
      
 #　目次
 - [事前準備](#事前準備)
-  * [PLATEAU SDK Toolkits for Unity のインストール](##PLATEAU-SDK-Toolkits-for-Unity-のインストール)
+  * [PLATEAU SDK Toolkits for Unity のインストール](#plateau-sdk-toolkits-for-unity-のインストール)
   * [AR用テンプレートプロジェクトのセットアップ](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/blob/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
  
 - [利用手順](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/edit/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
