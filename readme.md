@@ -13,9 +13,9 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
         - AR extensions ではオクルージョンマスクを設定するためのマテリアルやスクリプトを用意しています。
      
 # 目次
-- [事前準備](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/edit/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
-  * [PLATEAU SDK Toolkits for Unity のインストール]()
-  * [AR用テンプレートプロジェクトのセットアップ]()
+- [事前準備](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/blob/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
+  * [PLATEAU SDK Toolkits for Unity のインストール](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/blob/main/readme.md#1-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+  * [AR用テンプレートプロジェクトのセットアップ](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/blob/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
  
 - [利用手順](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/edit/main/readme.md#%E4%BA%8B%E5%89%8D%E6%BA%96%E5%82%99)
   * [1. サンプルを用いたARアプリケーションの体験]()
@@ -49,7 +49,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 
 # 事前準備
 
-## 1. PLATEAU SDK Toolkits for Unity のインストール
+## PLATEAU SDK Toolkits for Unity のインストール
 
 AR extensions は PLATEAU SDK Toolkits for Unity の機能を利用しているため、AR Toolkitを利用するためにはこちらをインストールする必要があります。
 
@@ -58,7 +58,7 @@ AR extensions は PLATEAU SDK Toolkits for Unity の機能を利用している�
 # 利用手順
 
 
-## 2. AR用テンプレートプロジェクトのセットアップ
+## AR用テンプレートプロジェクトのセットアップ
 
 本リポジトリでは構築済みのテンプレートプロジェクトを提供しています。  
 以下の利用ではこのテンプレートプロジェクトを基本としたARアプリの構築手順を説明します。
