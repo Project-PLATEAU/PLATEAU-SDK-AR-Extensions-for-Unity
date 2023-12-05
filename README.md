@@ -1,1 +1,1 @@
-# PLATEAU-SDK-AR-Extensions-for-Unity
+# PLATEAU SDK AR Extensions for Unity
