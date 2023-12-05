@@ -1,0 +1,28 @@
+{
+  "name": "com.unity.plateautoolkit.ar",
+  "displayName": "PLATEAU SDK AR Extensions for Unity",
+  "version": "0.1.2-alpha1",
+  "unity": "2021.3",
+  "description": "AR Extensions for PLATEAU",
+  "keywords": [
+    "Toolbox",
+    "Plateau",
+    "AR"
+  ],
+  "category": "utility",
+  "samples": [
+    {
+      "displayName": "AR Samples",
+      "description": "AR application samples",
+      "path": "Samples~/AR Samples",
+      "interactiveImport": true
+    }
+  ],
+  "dependencies": {
+    "com.unity.xr.arkit": "4.2.8",
+    "com.unity.modules.xr": "1.0.0",
+    "com.unity.plateautoolkit": "0.1.0",
+    "com.synesthesias.plateau-unity-sdk": "1.0.0",
+    "com.google.ar.core.arfoundation.extensions": "1.39.0"
+  }
+}

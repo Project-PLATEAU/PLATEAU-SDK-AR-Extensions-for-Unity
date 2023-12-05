@@ -1,0 +1,26 @@
+{
+    "name": "PlateauToolkit.AR",
+    "rootNamespace": "",
+    "references": [
+        "Unity.TextMeshPro",
+        "Unity.XR.ARCore",
+        "Unity.XR.ARFoundation",
+        "Unity.XR.ARSubsystems",
+        "Google.XR.ARCoreExtensions",
+        "CesiumRuntime",
+        "libplateau",
+        "PLATEAU.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "PlateauToolkit.Foundation",
+        "PlateauToolkit.Foundation.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
