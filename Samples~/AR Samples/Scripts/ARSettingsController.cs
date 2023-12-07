@@ -73,6 +73,7 @@ namespace PlateauAR
 
             m_ARSettingsUI.PrefectureDropdown.onValueChanged.AddListener(SelectPrefecture);
 
+#if UNITY_ANDROID
             if (m_ARSettingsUI.PlaybackDropdown == null)
             {
                 return;
@@ -149,8 +150,10 @@ namespace PlateauAR
             });
 
             RefreshPlaybacks();
+#endif
         }
 
+#if UNITY_ANDROID
         void RefreshPlaybacks()
         {
             m_PlaybackPaths = m_ARCoreSessionRecorder.GetPlaybackPaths();
@@ -160,6 +163,7 @@ namespace PlateauAR
                     .Select(p => new TMPro.TMP_Dropdown.OptionData(Path.GetFileNameWithoutExtension(p)))
                     .ToList());
         }
+#endif
 
         void Start()
         {

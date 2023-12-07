@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System;
 using UnityEngine;
+using UnityEngine.Scripting;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -30,11 +31,17 @@ namespace PlateauToolkit.AR
             /// </summary>
             [SerializeField] Transform m_MarkerPoint;
 
+            Material m_GizmoMaterial;
+
             public string TargetImageGuid => m_TargetImageGuid;
             public Transform MarkerPoint => m_MarkerPoint;
 
 #if UNITY_EDITOR
-            public Material GizmoMaterial { get; set; }
+            public Material GizmoMaterial
+            {
+                get => m_GizmoMaterial;
+                set => m_GizmoMaterial = value;
+            }
 #endif
         }
 
@@ -56,10 +63,10 @@ namespace PlateauToolkit.AR
         /// </remarks>
         [CanBeNull] ARTrackedImage m_CurrentTrackedImage;
 
-        [CanBeNull] ARMarkerConfiguration m_CurrentConfiguration;
+        [SerializeField] [CanBeNull] ARMarkerConfiguration m_CurrentConfiguration;
 
-        Vector3 m_ToPosition;
-        Quaternion m_ToRotation;
+        [SerializeField] Vector3 m_ToPosition;
+        [SerializeField] Quaternion m_ToRotation;
 
         /// <summary>
         /// The current status of AR marker tracking.
@@ -111,9 +118,15 @@ namespace PlateauToolkit.AR
 
             foreach (ARTrackedImage updatedImage in args.updated)
             {
-                if (m_CurrentTrackedImage != null && updatedImage.trackableId == m_CurrentTrackedImage.trackableId)
+                foreach (ARMarkerConfiguration configuration in m_ARMarkerConfigurations)
                 {
-                    SetARTrackedImage(updatedImage);
+                    if (updatedImage.referenceImage.guid.ToString() == configuration.TargetImageGuid)
+                    {
+                        m_CityModel.SetActive(true);
+                        m_CurrentConfiguration = configuration;
+                        SetARTrackedImage(updatedImage);
+                        break;
+                    }
                 }
             }
 
@@ -136,24 +149,23 @@ namespace PlateauToolkit.AR
                 return;
             }
 
+            Transform cityModelTransform = transform;
             m_CurrentTrackedImage = trackedImage;
 
-            Transform t = m_CityModel.transform;
-
-            Vector3 offset = m_CurrentConfiguration.MarkerPoint.position - t.position;
+            Vector3 offset = m_CurrentConfiguration.MarkerPoint.position - cityModelTransform.position;
             m_ToPosition = trackedImage.transform.position - offset;
 
-            Quaternion rotationOffset = Quaternion.Inverse(t.rotation) * m_CurrentConfiguration.MarkerPoint.rotation;
+            Quaternion rotationOffset = Quaternion.Inverse(cityModelTransform.rotation) * m_CurrentConfiguration.MarkerPoint.rotation;
             m_ToRotation = trackedImage.transform.rotation * Quaternion.Inverse(rotationOffset);
         }
 
         void Update()
         {
-            Transform t = m_CityModel.transform;
+            Transform cityModelTransform = transform;
 
             // Interpolate to the position and the rotation of the city model calculated from the tracked image.
-            t.position = Vector3.Lerp(t.position, m_ToPosition, Time.deltaTime * 10);
-            t.rotation = Quaternion.Lerp(t.rotation, m_ToRotation, Time.deltaTime * 10);
+            cityModelTransform.position = Vector3.Lerp(cityModelTransform.position, m_ToPosition, Time.deltaTime * 10);
+            cityModelTransform.rotation = Quaternion.Lerp(cityModelTransform.rotation, m_ToRotation, Time.deltaTime * 10);
         }
 
 #if UNITY_EDITOR
@@ -190,6 +202,11 @@ namespace PlateauToolkit.AR
 
             foreach (ARMarkerConfiguration configuration in m_ARMarkerConfigurations)
             {
+                if (configuration.MarkerPoint == null)
+                {
+                    continue;
+                }
+
                 if (configuration.GizmoMaterial == null)
                 {
                     Texture targetARMarkerTexture = GetTargetARMarkerTexture(configuration);

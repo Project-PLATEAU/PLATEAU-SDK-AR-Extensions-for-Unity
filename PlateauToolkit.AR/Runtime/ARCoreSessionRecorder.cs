@@ -1,13 +1,17 @@
-using System.IO;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+
+#if UNITY_ANDROID
+using System.IO;
 using UnityEngine.XR.ARCore;
+#endif
 
 namespace PlateauToolkit.AR
 {
     [RequireComponent(typeof(ARSession))]
     public class ARCoreSessionRecorder : MonoBehaviour
     {
+#if UNITY_ANDROID
         ARSession m_Session;
 
         string m_PlaybackStatusMessage;
@@ -111,5 +115,6 @@ namespace PlateauToolkit.AR
             controller = new();
             return false;
         }
+#endif
     }
 }
