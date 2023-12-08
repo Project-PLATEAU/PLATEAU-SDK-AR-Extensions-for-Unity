@@ -74,16 +74,16 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 - Android 13
 - iOS 16.7.1
 
-### Unity Version
+### Unity バージョン
 - Unity 2021.3.31f1 (2023/10/10現在 2021 LTSバージョン)
     - Unity 2021.3系であれば問題なく動作する見込みです。
 
-### Rendering Pipeline
-- URP
+### レンダリングパイプライン
+- URP (Universal Rendering Pipeline)
 
-HDRP、 Built-in Rendering Pipelineでは動作しません。
+HDRP (High Definition Rednering Pipeline)および Built-in Rendering Pipeline では動作しません。
 
-### PLATEAU SDKバージョン
+### PLATEAU SDK バージョン
 - [version 2.0.3-alpha](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.0.3-alpha)
 
 # 事前準備
@@ -107,10 +107,7 @@ AR Extensions リポジトリの “/~Templates” ディレクトリの中に�
 
 ## 1. サンプルを用いたARアプリケーションの体験
 
-<img width="600" alt="ar_manual_1_AR-Streaming" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/2c35dec7-caae-4fc2-a14d-73d9446c106e">
-
-
-
+<img width="600" alt="ar_manual_1_AR-Streaming" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/2c35dec7-caae-4fc2-a14d-73d9446c106e">\
 
 AR Extensions では各機能を使用したサンプルアセットおよび構築済みのARシーンを提供しています。このサンプルに含まれるシーンを用いることで、PLATEAUの3D都市モデルを使ったARアプリケーションをすぐに体験することができます。  
 また、構築済みのアセットを見ることで、各機能の具体的な使い方を理解することもできます。
@@ -125,7 +122,6 @@ AR Extensions では各機能を使用したサンプルアセットおよび構
 インポートされたサンプルは “Assets/Samples” ディレクトリに配置されます。以下の手順では Assets/Samples/PLATEAU AR Toolkit for Unity/0.1.0/AR Samples のディレクトリを「サンプルフォルダ」とします。
 
 <img width="400" alt="ar_manual_2_arsample_hierarchy" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/8bb59249-acdb-4d43-98b1-b0b7f8447dbe">
-
 
 
 ### 1-2. サンプルシーンを設定する
@@ -204,8 +200,6 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 <img width="600" alt="ar_manual_9_occulusionmenu" src="https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/68df4b49-0605-497f-a5a6-0ab8ad2c0b9e">
 
-
-
 ### 2-1. 3D都市モデルのマテリアル変更
 
 > **Note**
@@ -280,34 +274,56 @@ m_ARPositioning.SetOffset(offset);
 
 <br/>
 
-## 4. ARマーカーを使ったPLATEAUモデルの位置合わせ機能
+## 4. ARマーカーを使った3D都市モデルの位置合わせ機能
 
-GeospatialAPIなどを利用する代わりにARマーカーを利用することで、オフライン環境やGPSが取得できないトンネル・屋内などの環境でもPLATEAUモデルを地形に合わせることが可能となります。
+Geospatial APIなどを利用する代わりにARマーカーを利用することで、オフライン環境やGPSが取得できないトンネル・屋内などの環境でも3D都市モデルをAR空間上に位置を合わせて表示させることができます。
 
-### 4-1. UnityEditor上でマーカーオブジェクトを配置する
+### 4-1. 事前準備
 
-実空間でマーカーを配置したい場所に、PLATEAUモデル上でマーカーを配置します。
-"ARMarkerCityModelDev"の中にある"ARMarkerPoint"を動かして、配置し直してください。
+- AR環境の構築
+    - AR Extensions のサンプルシーンを参考に、 `AR Session` や `AR Session Origin` をシーンに用意します。
+    - サンプルシーンで使用しているプレハブをそのまま利用しても問題ありません。
+- 利用する3D都市モデルのインポート
+    - PLATEAU SDKを用いてシーン上に任意の3D都市モデルをインポートしてください。
 
-<img width="800" alt="ar_extensions_armarker_move_0" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/79016fc3-7b8d-4209-bfd2-ea9cb107ac3a">
-<img width="800" alt="ar_extensions_armarker_move_1" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/ae76761e-1672-4701-b979-62eff20fb40d">
+### 4-2. ARマーカー位置合わせコンポーネントの設定
 
+1. 空のゲームオブジェクトを作成し、位置と回転はそれぞれ (0, 0, 0) に設定します。
+2. 分かりやすいように、 "ARMarkerCityModel" などの名前を設定してください。
+3. 作成したゲームオブジェクトに `PlateauARMarkerCityModel` コンポーネントをアタッチします。
+    - 以降の手順では作成したゲームオブジェクトをARマーカー位置合わせオブジェクトと呼びます。
+4. `PlateauARMarkerCityModel` の各フィールドを設定します。
+    - `都市モデルオブジェクト` にインポートした3D都市モデルを設定します。
+    - `マーカー画像ライブラリ` に `AR Tracked Image Manager` がアタッチされたオブジェクトを設定します。
+5. `マーカー画像ライブラリ` を設定すると、ARマーカー設定が行えるようになります。「+」ボタンを押下し、マーカー設定を追加します。
+6. マーカー設定のプルダウンから位置合わせに使用するARマーカーを選択します。
+    - 選択するとマーカー設定の右側に使用するARマーカーのプレビューが表示されます。
+7. マーカー設定のトランスフォームに設定するためのゲームオブジェクトをARマーカー位置合わせオブジェクトの子オブジェクトとして新しく作成し、設定します。
+    - このオブジェクトはARマーカーを配置する場所を示すために使用されます。
+    - ここでは "ARMarkerPoint" という名前を設定し、以降の手順ではARマーカー位置オブジェクトと呼びます。
 
-### 4-2. 物理ARマーカーを印刷して用意する
-物理ARマーカーを印刷して用意してください。本サンプルのデフォルトのマーカーは　Assets > Samples > PLATEAU SDK AR Extensions for Unity > 0.1.1 > ARSamplesの中のar-marker.pdfです。
+### 4-3. ARマーカーの位置設定
 
-### 4-3. 物理ARマーカーをカメラでスキャンする
-サンプルアプリを起動し、対象となる物理ARマーカーをカメラでスキャンします。<br>
-すると、ARマーカーから相対位置を解決し、PLATEAUモデルが表示されます。
+1. 前の手順で作成したARマーカー位置オブジェクトを実空間でARマーカーを配置したい場所に一致する、3D都市モデル上の位置に配置します。
+    - マーカー設定に指定したゲームオブジェクトはシーン上で以下の画像のようにプレビューが表示されます。
+
+### 4-4. 読み取りに使用するARマーカーの用意
+
+1. 端末で読み取るためのARマーカーを印刷して用意します。
+    - AR Extensions のサンプルで提供しているマーカーは "Assets/Samples/PLATEAU SDK AR Extensions for Unity/{AR Extensions バージョン}/ARSamples/ar-marker.pdf" から印刷することができます。
+
+以上でARマーカー位置合わせの設定は完了です。
+
+### 4-3. 動作確認
+
+ARマーカー位置合わせを設定したシーンをビルド設定に追加し、アプリケーションをビルドして端末にインストールしてください。
+
+印刷したARマーカーを設定したARマーカー位置オブジェクトに対応する場所に置き、アプリケーションで読み取ると、ARマーカーから計算した相対位置に3D都市モデルが表示されます。
 
 <img width="374" alt="ar_extensions_armarker_real_marker_0" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/1c929f4e-613b-4cf4-b47f-bc43a768d012">
 <img width="481" alt="ar_extensions_armarker_real_marker_2" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/828fcaad-620a-46d4-993b-d8ed7f15fdde">
 
-※なお、ARマーカーの画像を変更したい場合はReference Image Libraryの画像を変更してください。
-
-
 <img width="800" alt="ar_extensions_armarker_real_marker_3" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/5a3f924d-efcf-458f-aabe-4cb480587fc6">
-
 
 ## 5. ARオクルージョン機能の利用方法
 
