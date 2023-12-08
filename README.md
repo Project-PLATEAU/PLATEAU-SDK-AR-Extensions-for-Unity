@@ -1,12 +1,10 @@
 # PLATEAU SDK-AR-Extensions for Unity 利用マニュアル
 
-
 https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/assets/127069970/1bb0cea8-c388-41fc-abcc-8462fa8473fd
-
 
 PLATEAUの3D都市モデルを使ったARアプリケーション開発を行うための支援機能を提供します。
 
-- PLATEAU-SDK-AR-Extensions-for-Unityで提供される機能
+- PLATEAU SDK-AR-Extensions for Unityで提供される機能
     - Geospatial API を用いたAR空間での3D都市モデルの位置合わせ
         - インポート (PLATEAU SDK) もしくはストリーミング (Cesium for Unity) により配置された3D都市モデルを、ビルドされたAR空間内で実際の建物の位置に配置します。
         - 3D都市モデルの位置がずれる場合にUIにより位置を調整することができます。
@@ -19,10 +17,10 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 [ダウンロードリンクはこちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/releases/tag/v0.1.0)
      
 ### 更新履歴
-
-|  2023/12/13  |  マーカーによるPLATEAUモデルの位置合わせ機能　|
+| 更新日時 | 更新内容 |
 | :--- | :--- |
-|  2023/10/28  |  AR Extensions初回リリース|
+|  2023/12/13  |  マーカーによるPLATEAUモデルの位置合わせ機能　|
+|  2023/10/28  |  AR Extensions 初回リリース|
 
      
 # 目次
@@ -83,9 +81,9 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 ### Rendering Pipeline
 - URP
 
-HDRP, Built-in Rendering Pipelineでは動作しません。
+HDRP、 Built-in Rendering Pipelineでは動作しません。
 
-## PLATEAU SDKバージョン
+### PLATEAU SDKバージョン
 - [version 2.0.3-alpha](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.0.3-alpha)
 
 # 事前準備
@@ -94,7 +92,7 @@ HDRP, Built-in Rendering Pipelineでは動作しません。
 
 AR Extensions は PLATEAU SDK-Toolkits for Unity の機能を利用しているため、AR Toolkitを利用するためにはこちらをインストールする必要があります。
 
-[こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)を参照して PLATEAU SDK Toolkits for Unity をインストールしてください。
+[こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)を参照して PLATEAU SDK-Toolkits for Unity をインストールしてください。
 
 ## AR用テンプレートプロジェクトのセットアップ
 
@@ -400,10 +398,9 @@ AR Extensions ウィンドウに用意している機能を使うことで、シ
 
 # 注意事項/利用規約
 - 本ツールはベータバージョンです。バグ、動作不安定、予期せぬ挙動等が発生する可能性があり、動作保証はできかねますのでご了承ください。
-- 処理をしたあとにToolkitsをアンインストールした場合、建物の表示が壊れるなど挙動がおかしくなる場合がございます。
-- 本ツールをアップデートした際は、一度Unity エディタを再起動してご利用ください。
-- パフォーマンスの観点から、3D都市モデルをダウンロード・インポートする際は、3㎞2範囲内とすることを推奨しています。
-- インポートエリアの広さや地物の種類（建物、道路、災害リスクなど）が増えると処理負荷が高くなる可能性があります。
-- 本リポジトリの内容は予告なく変更・削除する可能性があります。
+- 本ツールをアンインストールした場合、本ツールの機能で作成されたアセットの動作に不備が発生する可能性があります。
+- 本ツールをアップデートした際は、一度 Unity エディターを再起動することを推奨しています。
+- パフォーマンスの観点から、3km²の範囲に収まる3D都市モデルをダウンロード・インポートすることを推奨しています。
+- インポートする範囲の広さや地物の種類（建物、道路、災害リスクなど）が量に比例して処理負荷が高くなる可能性があります。
+- 本リポジトリの内容は予告なく変更・削除される可能性があります。
 - 本リポジトリの利用により生じた損失及び損害等について、国土交通省はいかなる責任も負わないものとします。
-
