@@ -291,8 +291,8 @@ GeospatialAPIなどを利用する代わりにARマーカーを利用するこ�
 実空間でマーカーを配置したい場所に、PLATEAUモデル上でマーカーを配置します。
 "ARMarkerCityModelDev"の中にある"ARMarkerPoint"を動かして、配置し直してください。
 
-<img width="800" alt="スクリーンショット 2023-11-28 0 30 17" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/098983f9-212d-47a8-8e03-a4dd9ab24da0">
-<img width="800" alt="スクリーンショット 2023-11-28 0 30 26" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/4b4f54c7-99e2-46cd-966e-970e24b7d081">
+<img width="800" alt="ar_extensions_armarker_move_0" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/79016fc3-7b8d-4209-bfd2-ea9cb107ac3a">
+<img width="800" alt="ar_extensions_armarker_move_1" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/ae76761e-1672-4701-b979-62eff20fb40d">
 
 
 ### 4-2. 物理ARマーカーを印刷して用意する
@@ -302,13 +302,13 @@ GeospatialAPIなどを利用する代わりにARマーカーを利用するこ�
 サンプルアプリを起動し、対象となる物理ARマーカーをカメラでスキャンします。<br>
 すると、ARマーカーから相対位置を解決し、PLATEAUモデルが表示されます。
 
-<img width="340" alt="スクリーンショット 2023-11-28 0 22 49" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/1b31a904-b589-4d8c-bc83-59bcc0aa4755">
-
-<img width="481" alt="スクリーンショット 2023-11-28 0 23 29" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/cb77ddce-f6c0-41ac-98e9-5d378958e8b7">
+<img width="374" alt="ar_extensions_armarker_real_marker_0" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/1c929f4e-613b-4cf4-b47f-bc43a768d012">
+<img width="481" alt="ar_extensions_armarker_real_marker_2" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/828fcaad-620a-46d4-993b-d8ed7f15fdde">
 
 ※なお、ARマーカーの画像を変更したい場合はReference Image Libraryの画像を変更してください。
 
-<img width="800" alt="スクリーンショット 2023-11-28 0 32 44" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/e014b381-8146-4cca-a364-013a33d8aed1">
+
+<img width="800" alt="ar_extensions_armarker_real_marker_3" src="https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity/assets/137732437/5a3f924d-efcf-458f-aabe-4cb480587fc6">
 
 
 ## 5. ARオクルージョン機能の利用方法
