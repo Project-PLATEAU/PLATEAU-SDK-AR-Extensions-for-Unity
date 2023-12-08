@@ -1,8 +1,7 @@
 # PLATEAU SDK-AR-Extensions for Unity 利用マニュアル
 
 
-https://github.com/SeiTakeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/127069970/45df5006-6d1a-469f-992f-1c842f6a9c9e
-
+https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/assets/127069970/1bb0cea8-c388-41fc-abcc-8462fa8473fd
 
 
 PLATEAUの3D都市モデルを使ったARアプリケーション開発を行うための支援機能を提供します。
