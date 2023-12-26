@@ -1,7 +1,7 @@
 {
   "name": "com.unity.plateautoolkit.ar",
   "displayName": "PLATEAU SDK AR Extensions for Unity",
-  "version": "0.1.2-alpha1",
+  "version": "0.3.0",
   "unity": "2021.3",
   "description": "AR Extensions for PLATEAU",
   "keywords": [
