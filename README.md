@@ -19,7 +19,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 ### 更新履歴
 | 更新日時 | 更新内容 |
 | :--- | :--- |
-|  2023/12/13  |  マーカーによるPLATEAUモデルの位置合わせ機能　|
+|  2023/12/25  |  マーカーによるPLATEAUモデルの位置合わせ機能　|
 |  2023/10/28  |  AR Extensions 初回リリース|
 
      
@@ -109,7 +109,7 @@ AR Extensions リポジトリの “/~Templates” ディレクトリの中に�
 
 ## 1. サンプルを用いたARアプリケーションの体験
 
-<img width="600" alt="ar_manual_1_AR-Streaming" src="/Documentation~/Images/ar_manual_1_AR-Streaming.png">
+<img width="600" alt="ar_manual_1_AR-Streaming" src="/Documentation~/Images/ar_manual_1_AR-Streaming.jpeg">
 
 AR Extensions では各機能を使用したサンプルアセットおよび構築済みのARシーンを提供しています。このサンプルに含まれるシーンを用いることで、PLATEAUの3D都市モデルを使ったARアプリケーションをすぐに体験することができます。  
 また、構築済みのアセットを見ることで、各機能の具体的な使い方を理解することもできます。
@@ -177,7 +177,7 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 ### 1-7. ARサンプルシーンの操作方法
 
-<img width="600" alt="ar_manual_6_defaultview" src="/Documentation~/Images/ar_manual_6_defaultview.png">
+<img width="600" alt="ar_manual_6_defaultview" src="/Documentation~/Images/ar_manual_6_defaultview.jpeg">
 
 サンプルアプリの右上の設定メニューでは下記のような設定を行うことが可能です。
 
@@ -187,15 +187,15 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 **建物マテリアルの色設定**
 
-表示する3D都市モデルの色をRGBAスライダーを動かすことで変更することが可能です。
-<img width="400" alt="ar_manual_7_manualui" src="/Documentation~/Images/ar_manual_7_manualui">
-<img width="400" alt="ar_manual_8_runtime_red" src="/Documentation~/Images/ar_manual_8_runtime_red">
+表示する3D都市モデルの色をRGBAスライダーを動かすことで変更することが可能です。<br>
+<img width="400" alt="ar_manual_7_manualui" src="/Documentation~/Images/ar_manual_7_manualui.png">
+<img width="400" alt="ar_manual_8_runtime_red" src="/Documentation~/Images/ar_manual_8_runtime_red.png">
 
 ## 2. ウィンドウの利用方法
 
-メニューより PLATEAU > PLATEAU Toolkit > AR Toolkit を選択し、AR Toolkit ウィンドウを開いて、それぞれの機能を利用することができます。
+メニューより PLATEAU > PLATEAU Toolkit > AR Toolkit を選択し、AR Toolkit ウィンドウを開いて、それぞれの機能を利用することができます。<br>
 
-<img width="600" alt="ar_manual_9_occulusionmenu" src="/Documentation~/Images/ar_manual_9_occulusionmenu">
+<img width="600" alt="ar_manual_9_occulusionmenu" src="/Documentation~/Images/ar_manual_9_occulusionmenu.png">
 
 ### 2-1. 3D都市モデルのマテリアル変更
 
@@ -299,7 +299,7 @@ Geospatial APIなどを利用する代わりにARマーカーを利用するこ�
     - このオブジェクトはARマーカーを配置する場所を示すために使用されます。
     - ここでは "ARMarkerPoint" という名前を設定し、以降の手順ではARマーカー位置オブジェクトと呼びます。
 
-<img width="400" alt="ar_manual_8_markerpointsetting" src="/Documentation~/Images/ar_manual_8_markerpointsetting">
+<img width="400" alt="ar_manual_8_markerpointsetting" src="/Documentation~/Images/ar_manual_8_markerpointsetting.png">
 
 ### 4-3. ARマーカーの位置設定
 
