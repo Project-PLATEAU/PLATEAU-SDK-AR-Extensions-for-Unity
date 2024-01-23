@@ -1,9 +1,9 @@
 {
   "name": "com.unity.plateautoolkit.ar",
-  "displayName": "PLATEAU SDK AR Extensions for Unity",
-  "version": "0.3.0",
+  "displayName": "PLATEAU SDK-AR-Extensions for Unity",
+  "version": "1.0.0",
   "unity": "2021.3",
-  "description": "AR Extensions for PLATEAU",
+  "description": "PLATEAUの3D都市モデルを使ったARアプリケーション開発を行うための支援機能を提供します。",
   "keywords": [
     "Toolbox",
     "Plateau",
