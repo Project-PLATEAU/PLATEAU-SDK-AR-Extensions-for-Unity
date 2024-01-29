@@ -101,8 +101,8 @@ AR Extensions は PLATEAU SDK-Toolkits for Unity の機能を利用している�
 本リポジトリでは構築済みのテンプレートプロジェクトを提供しています。  
 以下の利用ではこのテンプレートプロジェクトを基本としたARアプリの構築手順を説明します。
 
-AR Extensions リポジトリの “/~Templates” ディレクトリの中にある “AR Template” ディレクトリを任意の場所にコピーし、Unity Hubで AR Template プロジェクトを開いてください。
-
+AR Extensions リポジトリの “/~Templates” ディレクトリの中にある “AR Template” ディレクトリを任意の場所にコピーし、Unity Hubで AR Template プロジェクトを開いてください。<br>
+テンプレートプロジェクトの詳細は[こちら]("/Templates~/PLATEAUARUnityProject/README.md")のドキュメントをご参照ください。<br> <br>
 テンプレートプロジェクトのUnityバージョンは2021.3.22f1です。手元にない場合はUnity Hub よりインストールしてください。
 
 # 利用手順
