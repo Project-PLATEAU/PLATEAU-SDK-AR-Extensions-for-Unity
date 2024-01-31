@@ -93,7 +93,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 
 ## PLATEAU SDK-Toolkits for Unity のインストール
 
-AR Extensions は PLATEAU SDK-Toolkits for Unity の機能を利用しているため、AR Toolkitを利用するためにはこちらをインストールする必要があります。
+AR Extensions は PLATEAU SDK-Toolkits for Unity の機能を利用しているため、AR Extensionsを利用するためにはこちらをインストールする必要があります。
 
 [こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)を参照して PLATEAU SDK-Toolkits for Unity をインストールしてください。
 
@@ -121,7 +121,7 @@ AR Extensions では各機能を使用したサンプルアセットおよび構
 
 <img width="600" alt="ar_manual_1_3_packagemanager" src="/Documentation~/Images/ar_manual_1_3_packagemanager.png">
 
-インポートされたサンプルは “Assets/Samples” ディレクトリに配置されます。以下の手順では Assets/Samples/PLATEAU AR Toolkit for Unity/${AR Extensions バージョン}/AR Samples のディレクトリを「サンプルフォルダ」とします。
+インポートされたサンプルは “Assets/Samples” ディレクトリに配置されます。以下の手順では Assets/Samples/PLATEAU AR Extensions for Unity/${AR Extensions バージョン}/AR Samples のディレクトリを「サンプルフォルダ」とします。
 
 <img width="400" alt="ar_manual_2_arsample_hierarchy" src="/Documentation~/Images/ar_manual_2_arsample_hierarchy.png">
 
@@ -194,7 +194,7 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 
 ## 2. ウィンドウの利用方法
 
-メニューより PLATEAU > PLATEAU Toolkit > AR Toolkit を選択し、AR Toolkit ウィンドウを開いて、それぞれの機能を利用することができます。<br>
+メニューより PLATEAU > PLATEAU Toolkit > AR Extensions を選択し、AR Extensions ウィンドウを開いて、それぞれの機能を利用することができます。<br>
 
 <img width="600" alt="ar_manual_9_occulusionmenu" src="/Documentation~/Images/ar_manual_9_occulusionmenu.png">
 
