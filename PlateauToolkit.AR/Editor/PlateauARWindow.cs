@@ -1,6 +1,6 @@
-﻿using UnityEditor;
+﻿using CesiumForUnity;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 using PLATEAU.CityInfo;
 using PlateauToolkit.Editor;
 
@@ -28,7 +28,7 @@ namespace PlateauToolkit.AR.Editor
             EditorGUILayout.LabelField("マテリアル設定", EditorStyles.boldLabel);
 
             EditorGUILayout.HelpBox(
-                "PLATEAU SDKでインポートされた3D都市モデルのマテリアルを一括変更します。",
+                "シーン上のPLATEAU SDKでインポートされた3D都市モデルもしくはCesium 3D Tilesのマテリアルを一括変更します。",
                 MessageType.Info);
 
             m_ChangeMaterial = (Material)EditorGUILayout.ObjectField("マテリアル", m_ChangeMaterial, typeof(Material), false);
@@ -49,7 +49,7 @@ namespace PlateauToolkit.AR.Editor
 
                 if (zWriteMaterialPath == null)
                 {
-                    EditorUtility.DisplayDialog("エラー", "ZWriteマテリアルが見つかりません。PLATEAU AR Toolkitが正しくインストールされていることを確認してください。", "OK");
+                    EditorUtility.DisplayDialog("エラー", "ZWriteマテリアルが見つかりません。PLATEAU AR Extensionsが正しくインストールされていることを確認してください。", "OK");
                 }
                 else
                 {
@@ -75,6 +75,15 @@ namespace PlateauToolkit.AR.Editor
                         }
                         renderer.sharedMaterials = materials;
                     }
+                }
+
+                Cesium3DTileset[] cesium3DTilesets = FindObjectsByType<Cesium3DTileset>(
+                    FindObjectsInactive.Include,
+                    FindObjectsSortMode.None);
+
+                foreach (Cesium3DTileset cesium3DTileset in cesium3DTilesets)
+                {
+                    cesium3DTileset.opaqueMaterial = m_ChangeMaterial;
                 }
             }
         }
