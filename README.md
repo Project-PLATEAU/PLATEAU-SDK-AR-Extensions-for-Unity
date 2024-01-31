@@ -103,7 +103,7 @@ AR Extensions は PLATEAU SDK-Toolkits for Unity の機能を利用している�
 以下の利用ではこのテンプレートプロジェクトを基本としたARアプリの構築手順を説明します。
 
 AR Extensions リポジトリの “/~Templates” ディレクトリの中にある “AR Template” ディレクトリを任意の場所にコピーし、Unity Hubで AR Template プロジェクトを開いてください。<br>
-テンプレートプロジェクトの詳細は[こちら](xx)(公開後リンクを追加予定)のドキュメントをご参照ください。<br> <br>
+テンプレートプロジェクトの詳細は[こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/blob/main/Templates~/PLATEAU%20AR%20Unity%20Project/README.md)のドキュメントをご参照ください。<br> <br>
 テンプレートプロジェクトのUnityバージョンは2021.3.22f1です。手元にない場合はUnity Hub よりインストールしてください。
 
 # 利用手順
@@ -136,7 +136,7 @@ AR Extensions では各機能を使用したサンプルアセットおよび構
 - Sample02_PlateauCesiumAR.unity
     - ストリーミングにより配置されたPLATEAUの3D都市モデル（3DTiles）を用いたARシーンです。
     - ストリーミングでは対象の地域を選択する必要がありますが、サンプルでは地域を選択するUIを用意しています。
-    - ストリーミングを用いた3D都市モデルの利用方法については[PLATEAU SDK Maps Toolkit](！！ダミー！！)を参照してください。
+    - ストリーミングを用いた3D都市モデルの利用方法については[PLATEAU SDK Maps Toolkit](https://github.com/Project-PLATEAU/PLATEAU-SDK-Maps-Toolkit-for-Unity)を参照してください。
 - Boot.unity
     - シーン選択のサンプルとしてBootシーンを用意しています。このシーンを起動シーンに選択し、他のシーンを合わせて登録するとシーン選択画面を表示し、任意のシーンを起動することができます。
 
