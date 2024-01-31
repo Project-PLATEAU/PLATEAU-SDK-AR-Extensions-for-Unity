@@ -7,10 +7,10 @@ namespace PlateauToolkit.AR.Editor
     /// </summary>
     static class PlateauARMenuItems
     {
-        [MenuItem("PLATEAU/PLATEAU Toolkit/AR Toolkit", priority = 0)]
+        [MenuItem("PLATEAU/PLATEAU Toolkit/AR Extensions", priority = 0)]
         static void ShowSandboxWindow()
         {
-            EditorWindow.GetWindow(typeof(PlateauARWindow), false, "PLATEAU AR Toolkit");
+            EditorWindow.GetWindow(typeof(PlateauARWindow), false, "PLATEAU AR Extensions");
         }
     }
 }
