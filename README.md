@@ -133,7 +133,7 @@ Unityプロジェクトに Google ARCore Extensions をインストールする�
 2. 「Package Manager」ウィンドウの左上にある「＋」ボタンをクリックし、「Add package from tarball...」を選択します。
 3. ファイル選択ダイアログで PLATEAU SDK-AR-Extensions for Unity パッケージの tarball (.tgzファイル) を選択します。
 
-<img width="493" alt="ar_tgz_install" src="Documentation~/images/ar_tgz_install.png">
+<img width="493" alt="ar_tgz_install" src="/Documentation~/Images/ar_tgz_install.png">
 
 [ダウンロードリンクはこちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Maps-Toolkit-for-Unity/releases)
 
