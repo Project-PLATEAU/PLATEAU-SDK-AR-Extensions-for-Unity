@@ -21,19 +21,30 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 | :--- | :--- |
 |  2024/01/30  |  テンプレートプロジェクトの公開　|
 |  2023/12/25  |  マーカーによるPLATEAUモデルの位置合わせ機能　|
-|  2023/10/28  |  AR Extensions 初回リリース|
+|  2023/10/28  |  AR Extensions 初回リリース |
+|  2024/2/20   |  インストール方法に関する手順をREADMEに追記 |
 
      
 # 目次
 
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [PLATEAU SDK-AR-Extensions for Unity 利用マニュアル](#plateau-sdk-ar-extensions-for-unity-利用マニュアル)
+    - [更新履歴](#更新履歴)
+- [目次](#目次)
 - [検証済環境](#検証済環境)
     - [OS環境](#os環境)
     - [Unity バージョン](#unity-バージョン)
     - [レンダリングパイプライン](#レンダリングパイプライン)
     - [PLATEAU SDK バージョン](#plateau-sdk-バージョン)
 - [事前準備](#事前準備)
-  - [PLATEAU SDK-Toolkits for Unity のインストール](#plateau-sdk-toolkits-for-unity-のインストール)
   - [AR用テンプレートプロジェクトのセットアップ](#ar用テンプレートプロジェクトのセットアップ)
+  - [PLATEAU SDK-Toolkits for Unity のインストール](#plateau-sdk-toolkits-for-unity-のインストール)
+  - [Google ARCore Extensions のインストール](#google-arcore-extensions-のインストール)
+  - [PLATEAU SDK-AR-Extensions for Unity のインストール](#plateau-sdk-ar-extensions-for-unity-のインストール)
 - [利用手順](#利用手順)
   - [1. サンプルを用いたARアプリケーションの体験](#1-サンプルを用いたarアプリケーションの体験)
     - [1-1. AR Extensions サンプルのインポート](#1-1-ar-extensions-サンプルのインポート)
@@ -68,6 +79,8 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
     - [5-8. 遮蔽されるオブジェクトのレイヤーを変更](#5-8-遮蔽されるオブジェクトのレイヤーを変更)
 - [ライセンス](#ライセンス)
 - [注意事項/利用規約](#注意事項利用規約)
+
+<!-- /code_chunk_output -->
 
 # 検証済環境
 ### OS環境
