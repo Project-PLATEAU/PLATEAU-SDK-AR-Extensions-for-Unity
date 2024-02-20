@@ -91,20 +91,38 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 
 # 事前準備
 
+## AR用テンプレートプロジェクトのセットアップ
+
+本リポジトリでは構築済みのテンプレートプロジェクトを提供しています。以下の利用手順ではこのテンプレートプロジェクトを基本としたARアプリの構築手順を説明します。
+
+AR Extensions リポジトリの “/~Templates” ディレクトリの中にある “AR Template” ディレクトリを任意の場所にコピーし、Unity Hub でコピーしたプロジェクトを開いてください。<br>
+テンプレートプロジェクトの詳細は[こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/blob/main/Templates~/PLATEAU%20AR%20Unity%20Project/README.md)のドキュメントをご参照ください。
+
+テンプレートプロジェクトのUnityバージョンは2021.3.22f1です。手元にない場合は Unity Hub よりインストールしてください。
+
+AR用テンプレートプロジェクトを利用せず、既存のプロジェクト等で PLATEAU SDK-AR-Extensions for Unity を利用する場合は以降の手順を参考に各種パッケージをインストールしてください。
+
 ## PLATEAU SDK-Toolkits for Unity のインストール
 
 AR Extensions は PLATEAU SDK-Toolkits for Unity の機能を利用しているため、AR Extensionsを利用するためにはこちらをインストールする必要があります。
 
 [こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)を参照して PLATEAU SDK-Toolkits for Unity をインストールしてください。
 
-## AR用テンプレートプロジェクトのセットアップ
+## Google ARCore Extensions のインストール
 
-本リポジトリでは構築済みのテンプレートプロジェクトを提供しています。  
-以下の利用ではこのテンプレートプロジェクトを基本としたARアプリの構築手順を説明します。
+PLATEAU SDK-AR-Extensions では Google ARCore Extensions の機能である Geospatial API を利用するため、こちらをインストールする必要があります。
 
-AR Extensions リポジトリの “/~Templates” ディレクトリの中にある “AR Template” ディレクトリを任意の場所にコピーし、Unity Hubで AR Template プロジェクトを開いてください。<br>
-テンプレートプロジェクトの詳細は[こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/blob/main/Templates~/PLATEAU%20AR%20Unity%20Project/README.md)のドキュメントをご参照ください。<br> <br>
-テンプレートプロジェクトのUnityバージョンは2021.3.22f1です。手元にない場合はUnity Hub よりインストールしてください。
+Unityプロジェクトに Google ARCore Extensions をインストールする方法は公式ドキュメントに記載されているため、[こちら](https://developers.google.com/ar/develop/unity-arf/getting-started-extensions?hl=ja)を参照して Google ARCore Extensions をインストールしてください。
+
+## PLATEAU SDK-AR-Extensions for Unity のインストール
+
+1. Unityエディターを開き、「Window」メニューから「Package Manager」を選択します。
+2. 「Package Manager」ウィンドウの左上にある「＋」ボタンをクリックし、「Add package from tarball...」を選択します。
+3. ファイル選択ダイアログで PLATEAU SDK-AR-Extensions for Unity パッケージの tarball (.tgzファイル) を選択します。
+
+<img width="493" alt="ar_tgz_install" src="Documentation~/images/ar_tgz_install.png">
+
+[ダウンロードリンクはこちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Maps-Toolkit-for-Unity/releases)
 
 # 利用手順
 
