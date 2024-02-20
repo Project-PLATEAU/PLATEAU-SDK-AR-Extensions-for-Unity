@@ -108,6 +108,12 @@ AR Extensions は PLATEAU SDK-Toolkits for Unity の機能を利用している�
 
 [こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Toolkits-for-Unity#3-plateau-sdk-toolkits-for-unity-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)を参照して PLATEAU SDK-Toolkits for Unity をインストールしてください。
 
+## Google ARCore Extensions のインストール
+
+PLATEAU SDK-AR-Extensions では Google ARCore Extensions の機能である Geospatial API を利用するため、こちらをインストールする必要があります。
+
+Unityプロジェクトに Google ARCore Extensions をインストールする方法は公式ドキュメントに記載されているため、[こちら](https://developers.google.com/ar/develop/unity-arf/getting-started-extensions?hl=ja)を参照して Google ARCore Extensions をインストールしてください。
+
 ## PLATEAU SDK-AR-Extensions for Unity のインストール
 
 1. Unityエディターを開き、「Window」メニューから「Package Manager」を選択します。
