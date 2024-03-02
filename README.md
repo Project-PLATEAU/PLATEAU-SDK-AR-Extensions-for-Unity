@@ -90,8 +90,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 - iOS 16.7.1
 
 ### Unity バージョン
-- Unity 2021.3.31f1 (2023/10/10現在 2021 LTSバージョン)
-    - Unity 2021.3系であれば問題なく動作する見込みです。
+- Unity 2021.3.35
 
 ### レンダリングパイプライン
 - URP (Universal Rendering Pipeline)
@@ -100,7 +99,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 > HDRP (High Definition Rednering Pipeline) および Built-in Rendering Pipeline では動作しません。
 
 ### PLATEAU SDK バージョン
-- [version 2.0.3-alpha](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.0.3-alpha)
+- [version 2.3.2](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.3.2)
 
 # 事前準備
 
