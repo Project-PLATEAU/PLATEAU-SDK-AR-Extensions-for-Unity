@@ -90,8 +90,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 - iOS 16.7.1
 
 ### Unity バージョン
-- Unity 2021.3.31f1 (2023/10/10現在 2021 LTSバージョン)
-    - Unity 2021.3系であれば問題なく動作する見込みです。
+- Unity 2021.3.35f
 
 ### レンダリングパイプライン
 - URP (Universal Rendering Pipeline)
@@ -100,7 +99,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 > HDRP (High Definition Rednering Pipeline) および Built-in Rendering Pipeline では動作しません。
 
 ### PLATEAU SDK バージョン
-- [version 2.0.3-alpha](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.0.3-alpha)
+- [version 2.3.2](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.3.2)
 
 # 事前準備
 
@@ -111,7 +110,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 AR Extensions リポジトリの “/~Templates” ディレクトリの中にある “AR Template” ディレクトリを任意の場所にコピーし、Unity Hub でコピーしたプロジェクトを開いてください。<br>
 テンプレートプロジェクトの詳細は[こちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity/blob/main/Templates~/PLATEAU%20AR%20Unity%20Project/README.md)のドキュメントをご参照ください。
 
-テンプレートプロジェクトのUnityバージョンは2021.3.22f1です。手元にない場合は Unity Hub よりインストールしてください。
+テンプレートプロジェクトのUnityバージョンは2021.3.35f1です。手元にない場合は Unity Hub よりインストールしてください。
 
 AR用テンプレートプロジェクトを利用せず、既存のプロジェクト等で PLATEAU SDK-AR-Extensions for Unity を利用する場合は以降の手順を参考に各種パッケージをインストールしてください。
 
@@ -230,10 +229,6 @@ Build Settingsに表示されているプラットフォームからAndroidも�
 <img width="600" alt="ar_manual_9_occulusionmenu" src="/Documentation~/Images/ar_manual_9_occulusionmenu.png">
 
 ### 2-1. 3D都市モデルのマテリアル変更
-
-> [!Warning]
-> この機能は現時点ではインポートされた3D都市モデルにのみ対応しています（今後実装予定）。  
-> Cesium for Unityによってストリーミングされた3D都市モデルを利用する場合は `Cesium3DTileset` コンポーネントの `Opaque Material` フィールドを変更することでマテリアルを変更することができます。（詳細方法については後日追記予定）
 
 PLATEAU SDKを用いてシーンにインポートされた3D都市モデルオブジェクト ( `PLATEAUInstancedCityModel` )のマテリアルを一括で変更します。
 
