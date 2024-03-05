@@ -99,7 +99,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 > HDRP (High Definition Rednering Pipeline) および Built-in Rendering Pipeline では動作しません。
 
 ### PLATEAU SDK バージョン
-- [version 2.0.3-alpha](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.0.3-alpha)
+- [version 2.3.2](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.3.2)
 
 # 事前準備
 
