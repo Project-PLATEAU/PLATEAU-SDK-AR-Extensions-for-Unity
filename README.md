@@ -90,7 +90,8 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 - iOS 16.7.1
 
 ### Unity バージョン
-- Unity 2021.3.35f
+- Unity 2021.3.35
+
 
 ### レンダリングパイプライン
 - URP (Universal Rendering Pipeline)
