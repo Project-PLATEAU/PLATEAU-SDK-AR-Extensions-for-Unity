@@ -14,11 +14,12 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
             - 参考: [PLATEAU Tutorials TOPIC14｜VR・ARでの活用](https://www.mlit.go.jp/plateau/learning/tpc14-2/#p14_2_7)
         - AR Extensions ではオクルージョンマスクを設定するためのマテリアルやスクリプトを用意しています。
 
-[ダウンロードリンクはこちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/releases/tag/v0.1.0)
+[ダウンロードリンクはこちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/releases)
      
 ### 更新履歴
 | 更新日時 | 更新内容 |
 | :--- | :--- |
+|  2024/01/30  |  対応バージョン追記、一部リンクの修正　|
 |  2024/01/30  |  テンプレートプロジェクトの公開　|
 |  2023/12/25  |  マーカーによるPLATEAUモデルの位置合わせ機能　|
 |  2023/10/28  |  AR Extensions 初回リリース |
@@ -91,7 +92,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 
 ### Unity バージョン
 - Unity 2021.3.35
-
+- Unity 2022.3.25
 
 ### レンダリングパイプライン
 - URP (Universal Rendering Pipeline)
@@ -100,7 +101,7 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 > HDRP (High Definition Rednering Pipeline) および Built-in Rendering Pipeline では動作しません。
 
 ### PLATEAU SDK バージョン
-- [version 2.3.2](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.3.2)
+- [version 2.3.2](https://github.com/Synesthesias/PLATEAU-SDK-for-Unity/releases/tag/v2.3.2)以降
 
 # 事前準備
 
@@ -135,7 +136,7 @@ Unityプロジェクトに Google ARCore Extensions をインストールする�
 
 <img width="493" alt="ar_tgz_install" src="/Documentation~/Images/ar_tgz_install.png">
 
-[ダウンロードリンクはこちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-Maps-Toolkit-for-Unity/releases)
+[ダウンロードリンクはこちら](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-extensions-for-Unity/releases)
 
 # 利用手順
 
@@ -181,7 +182,7 @@ AR Extensions では各機能を使用したサンプルアセットおよび構
 
 - [PLATEAU SDK for Unity | Manual](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/ImportCityModels.html)
 
-インポートが完了したら、「3D都市モデルのAR空間内位置合わせ機能」の項目を参考に、位置合わせコンポーネント ( `PlateauARPositioning` )を設定してください。
+インポートが完了したら、[3. 3D都市モデルのAR空間内位置合わせ機能](#3-3d都市モデルのar空間内位置合わせ機能)の項目を参考に、位置合わせコンポーネント ( `PlateauARPositioning` )を設定してください。
 
 ### 1-4. Geospatial API (ARCore Extensions) の設定
 
