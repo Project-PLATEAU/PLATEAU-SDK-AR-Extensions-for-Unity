@@ -91,8 +91,8 @@ PLATEAUの3D都市モデルを使ったARアプリケーション開発を行う
 - iOS 16.7.1
 
 ### Unity バージョン
-- Unity 2021.3.35以降
-- Unity 2022.3.25
+- 動作確認環境：Unity 2021.3.35、Unity 2022.3.25
+- 推奨：Unity 2021.3.35以上
 
 ### レンダリングパイプライン
 - URP (Universal Rendering Pipeline)
